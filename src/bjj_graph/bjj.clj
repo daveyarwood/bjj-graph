@@ -138,4 +138,9 @@
 
 (comment
   (uber/pprint GRAPH)
-  (uber/viz-graph GRAPH {:layout :dot}))
+  (uber/viz-graph
+    GRAPH
+    {:layout :dot}))
+     ;; :save
+     ;; {:filename "/keybase/public/daveyarwood/misc/2021-07-19-bjj-graph.png"
+     ;;  :format :png}}))
