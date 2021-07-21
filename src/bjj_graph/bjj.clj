@@ -35,6 +35,7 @@
     "Trap and Roll (Headlock)"     "Open Guard"
     "Roll Them Off"                "Open Guard"
     "Headlock Counter"             "Modified Mount"
+    "Take the Back"                "Back Mount"
     "."                            "Twisting Arm Control"}
 
    "Side Mount"
@@ -50,7 +51,8 @@
 
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
-    "Rear Naked Choke (Strong Side)" "Submitted"}
+    "Rear Naked Choke (Strong Side)" "Submitted"
+    "Remount Technique"              "Mount"}
 
    "Standing Headlock"
    {"Standing Headlock Defense" "Modified Mount"}
