@@ -82,7 +82,8 @@
 
    "Punch Block Stage 1"
    {"."                       "Punch Block Stage 2"
-    ".."                      "Triangle Stage 1.5"
+    ".."                      "Punch Block Stage 4"
+    "..."                     "Triangle Stage 1.5"
     "Giant Killer"            "Triangle Setup"
     "Kimura Armlock (Rider)"  "Submitted"
     "Kimura Armlock (Forced)" "Submitted"}
@@ -90,6 +91,11 @@
    ;; TODO
    "Punch Block Stage 2"
    {}
+
+   "Punch Block Stage 4"
+   {"."          "Punch Block Stage 1"
+    ".."         "Punch Block Stage 5"
+    "Hook Sweep" "Opponent on Ground"}
 
    "Triangle Stage 1.5"
    {"." "Triangle Setup"}
@@ -144,5 +150,5 @@
     GRAPH
     {:layout :dot}))
      ;; :save
-     ;; {:filename "/keybase/public/daveyarwood/misc/2021-07-19-bjj-graph.png"
+     ;; {:filename "/keybase/public/daveyarwood/misc/2021-07-25-bjj-graph.png"
      ;;  :format :png}}))
