@@ -9,10 +9,7 @@
    "Standing Apart"
    {"Clinch (Aggressive Opponent)"   "Clinch"
     "Clinch (Conservative Opponent)" "Clinch"
-    "Haymaker Punch Defense"         "Rear Clinch"
-    "Guillotine Choke (Standing)"    "Submitted"
-    "Guillotine Choke (Guard Pull)"  "Submitted"
-    "Guillotine Defense"             "Side Mount"}
+    "Haymaker Punch Defense"         "Rear Clinch"}
 
    ;; Does this position have a standard name?
    "Opponent on Ground"
@@ -22,7 +19,8 @@
    "Clinch"
    {"Body Fold Takedown" "Mount"
     "Leg Hook Takedown"  "Mount"
-    "."                  "Standing Headlock"}
+    "."                  "Standing Guillotine"
+    ".."                 "Standing Headlock"}
 
    "Rear Clinch"
    {"Rear Takedown" "Modified Mount"}
@@ -53,6 +51,11 @@
    {"Rear Naked Choke (Weak Side)"   "Submitted"
     "Rear Naked Choke (Strong Side)" "Submitted"
     "Remount Technique"              "Mount"}
+
+   "Standing Guillotine"
+   {"Guillotine Choke (Standing)"   "Submitted"
+    "Guillotine Choke (Guard Pull)" "Submitted"
+    "Guillotine Defense"            "Side Mount"}
 
    "Standing Headlock"
    {"Standing Headlock Defense" "Modified Mount"}
