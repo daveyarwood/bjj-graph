@@ -41,12 +41,12 @@
    {"Shrimp Escape (Block and Shoot)"  "Punch Block Stage 1"
     "Shrimp Escape (Shrimp and Shoot)" "Punch Block Stage 1"
     "Shrimp Escape (Punch Block)"      "Punch Block Stage 1"
-    "Transition to Mount"              "Mount"}
+    "."                                "Mount"}
 
    "Modified Mount"
-   {"Take the Back"       "Back Mount"
-    "Transition to Mount" "Mount"
-    "Straight Armlock"    "Submitted"}
+   {"Take the Back"    "Back Mount"
+    "Straight Armlock" "Submitted"
+    "."                "Mount"}
 
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
