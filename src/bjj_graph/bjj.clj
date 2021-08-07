@@ -9,7 +9,8 @@
    "Standing Apart"
    {"Clinch (Aggressive Opponent)"   "Clinch"
     "Clinch (Conservative Opponent)" "Clinch"
-    "Haymaker Punch Defense"         "Rear Clinch"}
+    "Haymaker Punch Defense"         "Rear Clinch"
+    "Standing Armlock"               "Submitted"}
 
    ;; Does this position have a standard name?
    "Opponent on Ground"
@@ -62,10 +63,15 @@
 
    ;; Does this position have a standard name?
    "Sitting Headlock"
-   ;; TODO: add Headlock Escape 1
-   {"Headlock Escape 2 (Standard Leg Hook)" "Modified Mount"
-    "Headlock Escape 2 (Super Base)"        "Modified Mount"
-    "Headlock Escape 2 (Punch Block)"       "Modified Mount"}
+   {"Headlock Escape 1 (Standard Frame Escape)" "Scissor Setup"
+    "Headlock Escape 1 (Super Lock)"            "Modified Mount"
+    "Headlock Escape 2 (Standard Leg Hook)"     "Modified Mount"
+    "Headlock Escape 2 (Super Base)"            "Modified Mount"
+    "Headlock Escape 2 (Punch Block)"           "Modified Mount"}
+
+   "Scissor Setup"
+   {"Scissor Choke"   "Submitted"
+    "Scissor Failure" "Side Mount"}
 
    "Twisting Arm Control"
    {"Take the Back"    "Back Mount"
@@ -152,6 +158,6 @@
   (uber/viz-graph
     GRAPH
     {:layout :dot}))
-     ;; :save
-     ;; {:filename "/keybase/public/daveyarwood/misc/2021-07-25-bjj-graph.png"
-     ;;  :format :png}}))
+    ;;  :save
+    ;;  {:filename "/keybase/public/daveyarwood/misc/2021-08-06-bjj-graph.png"
+    ;;   :format :png}}))
