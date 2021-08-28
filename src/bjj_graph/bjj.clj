@@ -44,9 +44,12 @@
     "."                                "Mount"}
 
    "Modified Mount"
-   {"Take the Back"    "Back Mount"
-    "Straight Armlock" "Submitted"
-    "."                "Mount"}
+   {"Take the Back"     "Back Mount"
+    "Straight Armlock"  "Submitted"
+    ;; Possibly not a "real" technique with a proper name. They do this in the
+    ;; Fight Simulation drill in GU 30.
+    "Headlock and Roll" "Sitting Headlock"
+    "."                 "Mount"}
 
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
