@@ -21,7 +21,8 @@
    {"Body Fold Takedown" "Mount"
     "Leg Hook Takedown"  "Mount"
     "."                  "Standing Guillotine"
-    ".."                 "Standing Headlock"}
+    ".."                 "Standing Headlock"
+    "..."                "Rear Clinch"}
 
    "Rear Clinch"
    {"Rear Takedown" "Modified Mount"}
@@ -94,8 +95,9 @@
 
    "Punch Block Stage 1"
    {"."                       "Punch Block Stage 2"
-    ".."                      "Punch Block Stage 4"
-    "..."                     "Triangle Stage 1.5"
+    ".."                      "Punch Block Stage 3"
+    "..."                     "Punch Block Stage 4"
+    "...."                    "Triangle Stage 1.5"
     "Giant Killer"            "Triangle Setup"
     "Kimura Armlock (Rider)"  "Submitted"
     "Kimura Armlock (Forced)" "Submitted"}
@@ -103,6 +105,9 @@
    ;; TODO
    "Punch Block Stage 2"
    {}
+
+   "Punch Block Stage 3"
+   {"." "Punch Block Stage 4"}
 
    "Punch Block Stage 4"
    {"."          "Punch Block Stage 1"
@@ -161,6 +166,6 @@
   (uber/viz-graph
     GRAPH
     {:layout :dot}))
-    ;;  :save
-    ;;  {:filename "/keybase/public/daveyarwood/misc/2021-08-06-bjj-graph.png"
-    ;;   :format :png}}))
+     ;; :save
+     ;; {:filename "/keybase/public/daveyarwood/misc/2021-09-01-bjj-graph.png"
+     ;;  :format :png}}))
