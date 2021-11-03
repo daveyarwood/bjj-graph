@@ -20,6 +20,7 @@
    "Clinch"
    {"Body Fold Takedown" "Mount"
     "Leg Hook Takedown"  "Mount"
+    "Pull Guard"         "Guard"
     "."                  "Standing Guillotine"
     ".."                 "Standing Headlock"
     "..."                "Rear Clinch"}
