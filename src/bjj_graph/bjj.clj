@@ -34,6 +34,10 @@
     "Trap and Roll (Punch Block)"  "Open Guard"
     "Trap and Roll (Headlock)"     "Open Guard"
     "Roll Them Off"                "Open Guard"
+    "Elbow Escape (Standard)"      "Guard"
+    "Elbow Escape (Hook Removal)"  "Guard"
+    "Elbow Escape (Fish Hook)"     "Guard"
+    "Elbow Escape (Heel Drag)"     "Guard"
     "Headlock Counter"             "Modified Mount"
     "Take the Back"                "Back Mount"
     "."                            "Twisting Arm Control"}
@@ -167,5 +171,5 @@
     GRAPH
     {:layout :dot}))
      ;; :save
-     ;; {:filename "/keybase/public/daveyarwood/misc/2021-09-01-bjj-graph.png"
+     ;; {:filename "/keybase/public/daveyarwood/misc/2021-11-03-bjj-graph.png"
      ;;  :format :png}}))
