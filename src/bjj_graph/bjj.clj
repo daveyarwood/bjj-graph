@@ -44,12 +44,6 @@
     "Take the Back"                "Back Mount"
     "."                            "Twisting Arm Control"}
 
-   "Side Mount"
-   {"Shrimp Escape (Block and Shoot)"  "Punch Block Stage 1"
-    "Shrimp Escape (Shrimp and Shoot)" "Punch Block Stage 1"
-    "Shrimp Escape (Punch Block)"      "Punch Block Stage 1"
-    "."                                "Mount"}
-
    "Modified Mount"
    {"Take the Back"     "Back Mount"
     "Straight Armlock"  "Submitted"
@@ -57,6 +51,15 @@
     ;; Fight Simulation drill in GU 30.
     "Headlock and Roll" "Sitting Headlock"
     "."                 "Mount"}
+
+   "Side Mount"
+   {"Shrimp Escape (Block and Shoot)"  "Punch Block Stage 1"
+    "Shrimp Escape (Shrimp and Shoot)" "Punch Block Stage 1"
+    "Shrimp Escape (Punch Block)"      "Punch Block Stage 1"
+    "."                                "Mount"}
+
+   "Modified Side Mount"
+   {}
 
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
