@@ -59,7 +59,7 @@
     "."                                "Mount"}
 
    "Modified Side Mount"
-   {}
+   {"." "Side Mount"}
 
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
@@ -100,7 +100,8 @@
     "Elevator Sweep (Headlock)"        "Mount"
     "Take the Back"                    "Back Mount"
     "Double Ankle Sweep (Knee Thrust)" "Mount"
-    "Double Ankle Sweep (Kick)"        "Opponent on Ground"}
+    "Double Ankle Sweep (Kick)"        "Opponent on Ground"
+    "Double Underhook Guard Pass"      "Modified Side Mount"}
 
    "Punch Block Stage 1"
    {"."                       "Punch Block Stage 2"
