@@ -10,7 +10,8 @@
    {"Clinch (Aggressive Opponent)"   "Clinch"
     "Clinch (Conservative Opponent)" "Clinch"
     "Haymaker Punch Defense"         "Rear Clinch"
-    "Standing Armlock"               "Submitted"}
+    "Standing Armlock"               "Submitted"
+    "Double Leg Takedown"            "Side Mount"}
 
    ;; Does this position have a standard name?
    "Opponent on Ground"
