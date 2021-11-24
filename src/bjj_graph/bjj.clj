@@ -32,6 +32,7 @@
    "Mount"
    {"Americana Armlock (Standard)" "Submitted"
     "Americana Armlock (Neck-hug)" "Submitted"
+    "Straight Armlock"             "Submitted"
     "Trap and Roll (Standard)"     "Open Guard"
     "Trap and Roll (Punch Block)"  "Open Guard"
     "Trap and Roll (Headlock)"     "Open Guard"
@@ -177,5 +178,5 @@
     GRAPH
     {:layout :dot}))
      ;; :save
-     ;; {:filename "/keybase/public/daveyarwood/misc/2021-11-15-bjj-graph.png"
+     ;; {:filename "/keybase/public/daveyarwood/misc/2021-11-24-bjj-graph.png"
      ;;  :format :png}}))
