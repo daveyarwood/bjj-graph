@@ -1,5 +1,6 @@
 (ns bjj-graph.generator
   (:require [bjj-graph.bjj  :as bjj]
+            [clojure.string :as str]
             [ubergraph.core :as uber]))
 
 (defn options
@@ -41,6 +42,17 @@
    reached."
   [position]
   (cons position (random-sequence* position)))
+
+(defn random-position
+  []
+  (rand-nth (uber/nodes bjj/GRAPH)))
+
+(defn print-random-sequence!
+  "A convenient CLI-oriented entrypoint to the random sequence generator."
+  [_cli-arg]
+  (->> (random-sequence (random-position))
+       (str/join "\n")
+       println))
 
 (comment
   (random-sequence "Standing Apart")

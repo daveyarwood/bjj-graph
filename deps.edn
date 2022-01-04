@@ -2,4 +2,8 @@
  ["src"]
 
  :deps
- {ubergraph/ubergraph {:mvn/version "0.8.2"}}}
+ {ubergraph/ubergraph {:mvn/version "0.8.2"}}
+
+ :aliases
+ {:random-sequence
+  {:exec-fn bjj-graph.generator/print-random-sequence!}}}
