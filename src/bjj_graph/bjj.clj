@@ -120,12 +120,16 @@
    {"." "Punch Block Stage 1"}
 
    "Punch Block Stage 3"
-   {"." "Punch Block Stage 4"}
+   {"."  "Punch Block Stage 4"
+    ".." "Punch Block Stage 5"}
 
    "Punch Block Stage 4"
    {"."          "Punch Block Stage 1"
     ".."         "Punch Block Stage 5"
     "Hook Sweep" "Opponent on Ground"}
+
+   "Punch Block Stage 5"
+   {"Rollover Technique" "Punch Block Stage 4"}
 
    "Triangle Stage 1.5"
    {"." "Triangle Setup"}
