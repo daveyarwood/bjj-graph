@@ -57,6 +57,8 @@
    {"Shrimp Escape (Block and Shoot)"  "Punch Block Stage 1"
     "Shrimp Escape (Shrimp and Shoot)" "Punch Block Stage 1"
     "Shrimp Escape (Punch Block)"      "Punch Block Stage 1"
+    "Elbow Escape (Knee Drive)"        "Guard"
+    "Elbow Escape (High Step)"         "Guard"
     "."                                "Mount"}
 
    "Modified Side Mount"
