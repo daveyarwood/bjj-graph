@@ -172,11 +172,17 @@
                              (when (= "Submitted" end-pos)
                                {:color :red}))]))))
 
-(comment
-  (uber/pprint GRAPH)
+(defn viz-graph
+  "A CLI entrypoint to produce a visual graph of positions and techniques."
+  [opts]
   (uber/viz-graph
     GRAPH
-    {:layout :dot}))
-     ;; :save
-     ;; {:filename "/keybase/public/daveyarwood/misc/2021-11-24-bjj-graph.png"
-     ;;  :format :png}}))
+    (merge {:layout :dot} opts)))
+
+(comment
+  (uber/pprint GRAPH)
+  (viz-graph {})
+  (viz-graph
+    {:save
+     {:filename "/keybase/public/daveyarwood/misc/2022-01-07-bjj-graph.svg"
+      :format   :svg}}))

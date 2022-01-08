@@ -5,5 +5,8 @@
  {ubergraph/ubergraph {:mvn/version "0.8.2"}}
 
  :aliases
- {:random-sequence
+ {:viz-graph
+  {:exec-fn bjj-graph.bjj/viz-graph}
+
+  :random-sequence
   {:exec-fn bjj-graph.generator/print-random-sequence!}}}
