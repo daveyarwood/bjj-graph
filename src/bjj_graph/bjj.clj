@@ -98,13 +98,16 @@
     "Open Guard Pass" "Mount"}
 
    "Guard"
-   {"."                                "Punch Block Stage 1"
-    "Elevator Sweep (Standard)"        "Mount"
-    "Elevator Sweep (Headlock)"        "Mount"
-    "Take the Back"                    "Back Mount"
-    "Double Ankle Sweep (Knee Thrust)" "Mount"
-    "Double Ankle Sweep (Kick)"        "Opponent on Ground"
-    "Double Underhook Guard Pass"      "Modified Side Mount"}
+   {"."                                      "Punch Block Stage 1"
+    "Straight Armlock (Low)"                 "Submitted"
+    "Straight Armlock (High)"                "Submitted"
+    "Straight Armlock (Triangle Transition)" "Triangle Setup"
+    "Elevator Sweep (Standard)"              "Mount"
+    "Elevator Sweep (Headlock)"              "Mount"
+    "Take the Back"                          "Back Mount"
+    "Double Ankle Sweep (Knee Thrust)"       "Mount"
+    "Double Ankle Sweep (Kick)"              "Opponent on Ground"
+    "Double Underhook Guard Pass"            "Modified Side Mount"}
 
    "Punch Block Stage 1"
    {"."                       "Punch Block Stage 2"
