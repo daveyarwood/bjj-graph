@@ -132,7 +132,9 @@
     "Hook Sweep" "Opponent on Ground"}
 
    "Punch Block Stage 5"
-   {"Rollover Technique" "Punch Block Stage 4"}
+   {"."                  "Punch Block Stage 4"
+    "Rollover Technique" "Punch Block Stage 4"
+    "Stand Up"           "Standing Apart"}
 
    "Triangle Stage 1.5"
    {"." "Triangle Setup"}
