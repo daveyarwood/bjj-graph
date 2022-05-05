@@ -118,13 +118,14 @@
     "Kimura Armlock (Rider)"  "Submitted"
     "Kimura Armlock (Forced)" "Submitted"}
 
-   ;; TODO
    "Punch Block Stage 2"
-   {"." "Punch Block Stage 1"}
+   {"."  "Punch Block Stage 1"
+    ".." "Punch Block Stage 3"}
 
    "Punch Block Stage 3"
-   {"."  "Punch Block Stage 4"
-    ".." "Punch Block Stage 5"}
+   {"."   "Punch Block Stage 1"
+    ".."  "Punch Block Stage 4"
+    "..." "Punch Block Stage 5"}
 
    "Punch Block Stage 4"
    {"."          "Punch Block Stage 1"
