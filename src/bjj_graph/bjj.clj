@@ -67,7 +67,8 @@
    "Back Mount"
    {"Rear Naked Choke (Weak Side)"   "Submitted"
     "Rear Naked Choke (Strong Side)" "Submitted"
-    "Remount Technique"              "Mount"}
+    "Remount Technique"              "Mount"
+    "Spin Into Their Guard"          "Open Guard"}
 
    "Standing Guillotine"
    {"Guillotine Choke (Standing)"   "Submitted"
