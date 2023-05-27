@@ -5,6 +5,6 @@ and the edges are techniques.
 
 ## License
 
-Copyright © 2021 Dave Yarwood
+Copyright © 2021-2023 Dave Yarwood
 
 Distributed under the Eclipse Public License version 2.0.
