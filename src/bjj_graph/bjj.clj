@@ -54,9 +54,9 @@
     "."                 "Mount"}
 
    "Side Mount"
-   {"Shrimp Escape (Block and Shoot)"  "Punch Block Stage 1"
-    "Shrimp Escape (Shrimp and Shoot)" "Punch Block Stage 1"
-    "Shrimp Escape (Punch Block)"      "Punch Block Stage 1"
+   {"Shrimp Escape (Block and Shoot)"  "Guard"
+    "Shrimp Escape (Shrimp and Shoot)" "Guard"
+    "Shrimp Escape (Punch Block)"      "Guard"
     "Elbow Escape (Knee Drive)"        "Guard"
     "Elbow Escape (High Step)"         "Guard"
     "."                                "Mount"}
@@ -95,11 +95,19 @@
     "Straight Armlock" "Submitted"}
 
    "Open Guard"
-   {"Close Guard"     "Guard"
-    "Open Guard Pass" "Mount"}
+   {"Close Guard"                 "Guard"
+    "Open Guard Pass"             "Mount"
+    "Double Underhook Guard Pass" "Modified Side Mount"}
 
    "Guard"
-   {"."                                      "Punch Block Stage 1"
+   {"."                                      "Punch Block Stage 2"
+    ".."                                     "Punch Block Stage 3"
+    "..."                                    "Punch Block Stage 4"
+    "...."                                   "Triangle Stage 1.5"
+    "Strikes to Open Guard"                  "Open Guard"
+    "Giant Killer"                           "Triangle Setup"
+    "Kimura Armlock (Rider)"                 "Submitted"
+    "Kimura Armlock (Forced)"                "Submitted"
     "Straight Armlock (Low)"                 "Submitted"
     "Straight Armlock (High)"                "Submitted"
     "Straight Armlock (Triangle Transition)" "Triangle Setup"
@@ -107,29 +115,19 @@
     "Elevator Sweep (Headlock)"              "Mount"
     "Take the Back"                          "Back Mount"
     "Double Ankle Sweep (Knee Thrust)"       "Mount"
-    "Double Ankle Sweep (Kick)"              "Opponent on Ground"
-    "Double Underhook Guard Pass"            "Modified Side Mount"}
-
-   "Punch Block Stage 1"
-   {"."                       "Punch Block Stage 2"
-    ".."                      "Punch Block Stage 3"
-    "..."                     "Punch Block Stage 4"
-    "...."                    "Triangle Stage 1.5"
-    "Giant Killer"            "Triangle Setup"
-    "Kimura Armlock (Rider)"  "Submitted"
-    "Kimura Armlock (Forced)" "Submitted"}
+    "Double Ankle Sweep (Kick)"              "Opponent on Ground"}
 
    "Punch Block Stage 2"
-   {"."  "Punch Block Stage 1"
+   {"."  "Guard"
     ".." "Punch Block Stage 3"}
 
    "Punch Block Stage 3"
-   {"."   "Punch Block Stage 1"
+   {"."   "Guard"
     ".."  "Punch Block Stage 4"
     "..." "Punch Block Stage 5"}
 
    "Punch Block Stage 4"
-   {"."          "Punch Block Stage 1"
+   {"."          "Guard"
     ".."         "Punch Block Stage 5"
     "Hook Sweep" "Opponent on Ground"}
 
