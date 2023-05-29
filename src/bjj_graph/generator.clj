@@ -17,13 +17,9 @@
     [label' dest]))
 
 (defn- random-sequence*
-  "Given a starting position, generates a random sequence of techniques that
-   can be used logically in sequence.
-
-   The sequence is of arbitrary length, terminating whenever \"Submitted\" is
-   reached."
-  [position]
-  (if (= "Submitted" position)
+  [position length]
+  (if (or (= 0 length)
+          (= "Submitted" position))
     '()
     (lazy-seq
       (let [next-position-options
@@ -35,32 +31,50 @@
                               {:position position})))
 
             [technique next-position]
-            (rand-nth (options position))]
-        (cons technique (random-sequence* next-position))))))
+            (let [all-options             (options position)
+                  non-submission-options  (filter
+                                            (fn [[_k v]] (not= "Submitted" v))
+                                            all-options)
+                  ;; If there is at least one more step after this one and there
+                  ;; are non-submission options available, then avoid
+                  ;; submissions, so as not to end the sequence prematurely.
+                  options     (if (and length
+                                       (pos? length)
+                                       (seq non-submission-options))
+                                non-submission-options
+                                all-options)]
+              (rand-nth options))]
+        (cons technique
+              (random-sequence*
+                next-position
+                (when length (dec length))))))))
 
 (defn random-sequence
-  "Given a starting position, generates a random sequence of techniques that
-   can be used logically in sequence.
+  "Given a starting `position` and an optional `length`, generates a random
+   sequence of techniques that can be used logically in sequence.
 
-   The sequence is of arbitrary length, terminating whenever \"Submitted\" is
-   reached."
-  [position]
-  (cons position (random-sequence* position)))
+   When `length` is provided, the sequence (generally) ends after that many
+   steps. Submissions are avoided, unless we're on the last step or we end up
+   going down a path where the only defined options are submissions.
+
+   When no `length` is provided, the sequence is of arbitrary length, ending
+   whenever \"Submitted\" is reached."
+  [position & [length]]
+  (cons position (random-sequence* position length)))
 
 (defn random-position
   []
   (rand-nth (uber/nodes bjj/GRAPH)))
 
 (defn random-subgraph
-  "Given a starting position, generates a random sequence of techniques that
-   can be used logically in sequence, and returns a subgraph consisting of
-   those positions and techniques.
+  "Given a starting `position` and an optional `length`, generates a random
+   sequence of techniques that can be used logically in sequence, and returns a
+   subgraph consisting of those positions and techniques.
 
-   The sequence is of arbitrary length, terminating whenever \"Submitted\" is
-   reached."
-  [position]
+   See `random-sequence` for details about sequence generation."
+  [position & [length]]
   (let [generated-sequence
-        (random-sequence position)
+        (random-sequence position length)
 
         {:keys [graph]}
         (reduce (fn [{:keys [current-position graph]}

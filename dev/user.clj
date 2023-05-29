@@ -9,7 +9,7 @@
   (uber/pprint bjj/GRAPH)
 
   (uber/viz-graph
-    (gen/random-subgraph "Mount")
+    (gen/random-subgraph "Guard" 3)
     {:layout :dot})
 
   (bjj/viz-graph {})
