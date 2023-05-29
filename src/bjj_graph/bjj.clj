@@ -166,7 +166,7 @@
    position. This does make it harder to use the graph to answer questions like
    \"If I'm on top of the mount, what options do I have?\" but maybe it's still
    possible. For example, maybe I can add metadata to the edges to identify
-   submissions vs.  escapes, etc. If you're on the top of the mount, escapes
+   submissions vs. escapes, etc. If you're on the top of the mount, escapes
    aren't relevant, so we could filter them out."
   (apply
     uber/multidigraph
