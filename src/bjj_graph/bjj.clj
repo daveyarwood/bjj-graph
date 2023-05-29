@@ -5,8 +5,7 @@
   {"Submitted"
    {}
 
-   ;; Does this position have a standard name?
-   "Standing Apart"
+   "Standing"
    {"Clinch (Aggressive Opponent)"   "Clinch"
     "Clinch (Conservative Opponent)" "Clinch"
     "Haymaker Punch Defense"         "Rear Clinch"
@@ -134,7 +133,7 @@
    "Punch Block Stage 5"
    {"."                  "Punch Block Stage 4"
     "Rollover Technique" "Punch Block Stage 4"
-    "Stand Up"           "Standing Apart"}
+    "Stand Up"           "Standing"}
 
    "Triangle Stage 1.5"
    {"." "Triangle Setup"}
