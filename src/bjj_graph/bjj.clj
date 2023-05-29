@@ -191,11 +191,3 @@
   (uber/viz-graph
     GRAPH
     (merge {:layout :dot} opts)))
-
-(comment
-  (uber/pprint GRAPH)
-  (viz-graph {})
-  (viz-graph
-    {:save
-     {:filename "/keybase/public/daveyarwood/misc/2022-01-07-bjj-graph.svg"
-      :format   :svg}}))
