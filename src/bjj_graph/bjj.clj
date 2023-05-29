@@ -1,7 +1,7 @@
 (ns bjj-graph.bjj
   (:require [ubergraph.core :as uber]))
 
-(def ^:private combatives-techniques
+(def combatives-techniques
   {"Submitted"
    {}
 
@@ -142,23 +142,22 @@
    "Triangle Setup"
    {"Triangle Choke" "Submitted"}})
 
-(def ^:private combatives-v2-bonus-slices
+(def combatives-v2-bonus-slices
   {"Mount"
    {"Trap and Roll (Spread Hand)" "Open Guard"}})
 
-;; TODO: Make the sets of techniques configurable, e.g. to allow generating a
-;; graph of just Combatives techniques, vs. Combatives + Master Cycle.
-(def ^:private techniques
+(def all-techniques
   (merge-with
     merge
     combatives-techniques
     combatives-v2-bonus-slices))
 
-(def GRAPH
-  "A graph representation of Brazilian jiu-jitsu where positions (e.g.  mount)
-   are nodes and techniques (e.g. elevator sweep) are edges.
+(defn graph
+  "Given a map of BJJ positions and techniques, returns a graph representation
+   where the positions (e.g. guard) are nodes and techniques (e.g. elevator
+   sweep) are edges.
 
-   The ubergraph library provides four flavors:
+   The ubergraph library provides four flavors of graph:
    1. Graph        (bidirectional, only one edge between nodes)
    2. Digraph      (directed/one-way, only one edge between nodes)
    3. Multigraph   (bidirectional, multiple edges between nodes)
@@ -178,6 +177,7 @@
    possible. For example, maybe I can add metadata to the edges to identify
    submissions vs. escapes, etc. If you're on the top of the mount, escapes
    aren't relevant, so we could filter them out."
+  [techniques]
   (apply
     uber/multidigraph
     (concat
@@ -194,6 +194,11 @@
                              {:label technique}
                              (when (= "Submitted" end-pos)
                                {:color :red}))]))))
+
+;; TODO: Make the sets of techniques configurable, e.g. to allow generating a
+;; graph of just Combatives techniques, vs. Combatives + Master Cycle.
+(def GRAPH
+  (graph all-techniques))
 
 (defn viz-graph
   "A CLI entrypoint to produce a visual graph of positions and techniques."

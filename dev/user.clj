@@ -1,11 +1,16 @@
 (ns user
   (:require [bjj-graph.bjj        :as bjj]
+            [bjj-graph.generator  :as gen]
             [clojure.java.process :as proc]
             [ubergraph.core       :as uber])
   (:import [java.time LocalDate]))
 
 (comment
   (uber/pprint bjj/GRAPH)
+
+  (uber/viz-graph
+    (gen/random-subgraph "Mount")
+    {:layout :dot})
 
   (bjj/viz-graph {})
 
