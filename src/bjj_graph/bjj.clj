@@ -1,7 +1,7 @@
 (ns bjj-graph.bjj
   (:require [ubergraph.core :as uber]))
 
-(def ^:private techniques
+(def ^:private combatives-techniques
   {"Submitted"
    {}
 
@@ -143,6 +143,18 @@
 
    "Triangle Setup"
    {"Triangle Choke" "Submitted"}})
+
+(def ^:private combatives-v2-bonus-slices
+  {"Mount"
+   {"Trap and Roll (Spread Hand)" "Open Guard"}})
+
+;; TODO: Make the sets of techniques configurable, e.g. to allow generating a
+;; graph of just Combatives techniques, vs. Combatives + Master Cycle.
+(def ^:private techniques
+  (merge-with
+    merge
+    combatives-techniques
+    combatives-v2-bonus-slices))
 
 (def GRAPH
   "A graph representation of Brazilian jiu-jitsu where positions (e.g.  mount)
