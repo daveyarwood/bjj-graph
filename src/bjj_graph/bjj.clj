@@ -143,7 +143,8 @@
 
 (def combatives-v2-bonus-slices
   {"Mount"
-   {"Trap and Roll (Spread Hand)" "Open Guard"}})
+   {"Trap and Roll (Spread Hand)"    "Open Guard"
+    "Americana Armlock (Side Entry)" "Submitted"}})
 
 (def all-techniques
   (merge-with
