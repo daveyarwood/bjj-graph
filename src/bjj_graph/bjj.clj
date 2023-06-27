@@ -67,7 +67,8 @@
    {"Rear Naked Choke (Weak Side)"   "Submitted"
     "Rear Naked Choke (Strong Side)" "Submitted"
     "Remount Technique"              "Mount"
-    "Spin Into Their Guard"          "Open Guard"}
+    "Spin Into Their Guard"          "Open Guard"
+    "Frame Escape"                   "Open Guard"}
 
    "Standing Guillotine"
    {"Guillotine Choke (Standing)"   "Submitted"
@@ -143,8 +144,10 @@
 
 (def combatives-v2-bonus-slices
   {"Mount"
-   {"Trap and Roll (Spread Hand)"    "Open Guard"
-    "Americana Armlock (Side Entry)" "Submitted"}})
+   {"Trap and Roll (Spread Hand)"      "Open Guard"
+    "Americana Armlock (Side Entry)"   "Submitted"
+    ;; You don't end up in a standard back mount, but it's similar.
+    "Take the Back (Rider Transition)" "Back Mount"}})
 
 (def all-techniques
   (merge-with
