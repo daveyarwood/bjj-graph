@@ -142,7 +142,16 @@
    {"Triangle Choke" "Submitted"}})
 
 (def combatives-v2-bonus-slices
-  {"Mount"
+  {"Standing"
+   {"." "Over-Under Clinch"}
+
+   "Clinch"
+   {"Outside Trip" "Side Mount"}
+
+   "Over-Under Clinch"
+   {"Pummel" "Clinch"}
+
+   "Mount"
    {"Trap and Roll (Spread Hand)"      "Open Guard"
     "Americana Armlock (Side Entry)"   "Submitted"
     ;; You don't end up in a standard back mount, but it's similar.
