@@ -67,8 +67,7 @@
    {"Rear Naked Choke (Weak Side)"   "Submitted"
     "Rear Naked Choke (Strong Side)" "Submitted"
     "Remount Technique"              "Mount"
-    "Spin Into Their Guard"          "Open Guard"
-    "Frame Escape"                   "Open Guard"}
+    "Spin Into Their Guard"          "Open Guard"}
 
    "Standing Guillotine"
    {"Guillotine Choke (Standing)"   "Submitted"
@@ -147,7 +146,10 @@
    {"Trap and Roll (Spread Hand)"      "Open Guard"
     "Americana Armlock (Side Entry)"   "Submitted"
     ;; You don't end up in a standard back mount, but it's similar.
-    "Take the Back (Rider Transition)" "Back Mount"}})
+    "Take the Back (Rider Transition)" "Back Mount"}
+
+   "Back Mount"
+   {"Frame Escape" "Open Guard"}})
 
 (def all-techniques
   (merge-with
