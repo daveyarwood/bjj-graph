@@ -155,10 +155,17 @@
    {"Trap and Roll (Spread Hand)"      "Open Guard"
     "Americana Armlock (Side Entry)"   "Submitted"
     ;; You don't end up in a standard back mount, but it's similar.
-    "Take the Back (Rider Transition)" "Back Mount"}
+    "Take the Back (Rider Transition)" "Back Mount"
+    ".."                               "S-Mount"}
+
+   "S-Mount"
+   {"Straight Armlock" "Submitted"}
 
    "Back Mount"
-   {"Frame Escape" "Open Guard"}})
+   {"Frame Escape" "Open Guard"}
+
+   "Guard"
+   {"Guard Get-Up" "Opponent on Ground"}})
 
 (def all-techniques
   (merge-with
