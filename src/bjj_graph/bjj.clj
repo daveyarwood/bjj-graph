@@ -177,11 +177,16 @@
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}})
 
+(def blue-belt-stripe-1-techniques
+  {"Mount"
+   {"Figure-Four Armbar" "Submitted"}})
+
 (def all-techniques
   (merge-with
     merge
     combatives-techniques
-    combatives-v2-bonus-slices))
+    combatives-v2-bonus-slices
+    blue-belt-stripe-1-techniques))
 
 (defn graph
   "Given a map of BJJ positions and techniques, returns a graph representation
