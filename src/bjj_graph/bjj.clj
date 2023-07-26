@@ -151,6 +151,9 @@
    "Over-Under Clinch"
    {"Pummel" "Clinch"}
 
+   "Opponent on Ground"
+   {"..." "Knee-on-Belly"}
+
    "Mount"
    {"Trap and Roll (Spread Hand)"      "Open Guard"
     "Americana Armlock (Side Entry)"   "Submitted"
@@ -160,6 +163,13 @@
 
    "S-Mount"
    {"Straight Armlock" "Submitted"}
+
+   "Knee-on-Belly"
+   {"."  "Opponent on Ground"
+    ".." "Side Mount"}
+
+   "Side Mount"
+   {"..." "Knee-on-Belly"}
 
    "Back Mount"
    {"Frame Escape" "Open Guard"}
