@@ -146,7 +146,8 @@
    {"." "Over-Under Clinch"}
 
    "Clinch"
-   {"Outside Trip" "Side Mount"}
+   {"Inside Trip"  "Open Guard"
+    "Outside Trip" "Side Mount"}
 
    "Over-Under Clinch"
    {"Pummel" "Clinch"}
