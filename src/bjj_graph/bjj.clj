@@ -180,7 +180,8 @@
 
 (def blue-belt-stripe-1-techniques
   {"Mount"
-   {"Figure-Four Armbar" "Submitted"}})
+   {"Figure-Four Armbar" "Submitted"
+    "Cross Choke"        "Submitted"}})
 
 (def all-techniques
   (merge-with
