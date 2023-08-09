@@ -143,7 +143,8 @@
 
 (def combatives-v2-bonus-slices
   {"Standing"
-   {"." "Over-Under Clinch"}
+   {"."                "Over-Under Clinch"
+    "Pisão Front Kick" "Clinch"}
 
    "Clinch"
    {"Inside Trip"  "Open Guard"
