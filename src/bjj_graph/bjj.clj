@@ -167,7 +167,11 @@
     "Americana Armlock (Side Entry)"   "Submitted"
     ;; You don't end up in a standard back mount, but it's similar.
     "Take the Back (Rider Transition)" "Back Mount"
-    ".."                               "S-Mount"}
+    ".."                               "S-Mount"
+    "..."                              "Bottom-Mount Guillotine"}
+
+   "Bottom-Mount Guillotine"
+   {"Guillotine Dismount" "Side Mount"}
 
    "S-Mount"
    {"Straight Armlock" "Submitted"}
