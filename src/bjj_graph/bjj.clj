@@ -187,7 +187,8 @@
    {"Frame Escape" "Open Guard"}
 
    "Guard"
-   {"Guard Get-Up" "Opponent on Ground"}})
+   {"Guard Get-Up"                  "Opponent on Ground"
+    "Straight Armlock (Cross Grip)" "Submitted"}})
 
 (def blue-belt-stripe-1-techniques
   {"Mount"
