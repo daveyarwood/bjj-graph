@@ -1,5 +1,7 @@
 (ns bjj-graph.bjj
-  (:require [ubergraph.core :as uber]))
+  (:require [bjj-graph.collections :as coll]
+            [clojure.set           :as set]
+            [ubergraph.core        :as uber]))
 
 (def combatives-techniques
   {"Submitted"
@@ -208,8 +210,18 @@
     "Mount Transition (High Step)" "Mount"}})
 
 (def all-techniques
-  (merge-with
-    merge
+  (coll/merge-with+
+    (fn [position edges-1 edges-2]
+      (let [[techniques-1 techniques-2]
+            (map #(set (keys %)) [edges-1 edges-2])
+
+            duplicate-techniques
+            (set/intersection techniques-1 techniques-2)]
+        (when (seq duplicate-techniques)
+          (throw (ex-info "Merge conflict: duplicate techniques"
+                          {:position             position
+                           :duplicate-techniques duplicate-techniques})))
+        (merge edges-1 edges-2)))
     combatives-techniques
     combatives-v2-bonus-slices
     blue-belt-stripe-1-techniques))
