@@ -10,7 +10,8 @@
     "Clinch (Conservative Opponent)" "Clinch"
     "Haymaker Punch Defense"         "Rear Clinch"
     "Standing Armlock"               "Submitted"
-    "Double Leg Takedown"            "Side Mount"}
+    "Double Leg Takedown"            "Side Mount"
+    "."                              "Standing Guillotine"}
 
    ;; Does this position have a standard name?
    "Opponent on Ground"
@@ -149,7 +150,7 @@
 
 (def combatives-v2-bonus-slices
   {"Standing"
-   {"."                "Over-Under Clinch"
+   {".."               "Over-Under Clinch"
     "Pisão Front Kick" "Clinch"}
 
    "Clinch"
