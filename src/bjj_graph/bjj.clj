@@ -151,7 +151,11 @@
 (def combatives-v2-bonus-slices
   {"Standing"
    {".."               "Over-Under Clinch"
+    "..."              "Standing Guillotine (Arm-In)"
     "Pisão Front Kick" "Clinch"}
+
+   "Standing Guillotine (Arm-In)"
+   {"Guillotine Choke (Guard Pull)" "Submitted"}
 
    "Clinch"
    {"Inside Trip"  "Open Guard"
