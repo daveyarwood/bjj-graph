@@ -198,6 +198,9 @@
    "Back Mount"
    {"Frame Escape" "Open Guard"}
 
+   "Half Guard"
+   {"Tripod Pass" "Cross-Chest"}
+
    "Guard"
    {"Guard Get-Up"                  "Opponent on Ground"
     "Straight Armlock (Cross Grip)" "Submitted"}})
