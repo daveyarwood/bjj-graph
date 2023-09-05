@@ -39,10 +39,10 @@
     "Trap and Roll (Punch Block)"  "Open Guard"
     "Trap and Roll (Headlock)"     "Open Guard"
     "Roll Them Off"                "Open Guard"
-    "Elbow Escape (Standard)"      "Guard"
-    "Elbow Escape (Hook Removal)"  "Guard"
-    "Elbow Escape (Fish Hook)"     "Guard"
-    "Elbow Escape (Heel Drag)"     "Guard"
+    "Elbow Escape (Standard)"      "Half Guard"
+    "Elbow Escape (Hook Removal)"  "Half Guard"
+    "Elbow Escape (Fish Hook)"     "Half Guard"
+    "Elbow Escape (Heel Drag)"     "Half Guard"
     "Headlock Counter"             "Modified Mount"
     "Take the Back"                "Back Mount"
     "."                            "Twisting Arm Control"}
@@ -101,6 +101,11 @@
    "Twisting Arm Control"
    {"Take the Back"    "Back Mount"
     "Straight Armlock" "Submitted"}
+
+   ;; TODO: Refine this when I learn more about quarter guard, three-quarter
+   ;; guard, and transitioning from half guard to guard, in general
+   "Half Guard"
+   {"." "Open Guard"}
 
    "Open Guard"
    {"Close Guard"                 "Guard"
