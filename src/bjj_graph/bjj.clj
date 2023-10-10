@@ -193,7 +193,10 @@
     ".." "Side Mount"}
 
    "Side Mount"
-   {"..." "Knee-on-Belly"}
+   {"..."                 "Knee-on-Belly"
+    ;; TODO: Refine this into Quarter Guard, then Quarter -> Half, Half ->
+    ;; Three-Quarter
+    "Half Guard Recovery" "Half Guard"}
 
    "Back Mount"
    {"Frame Escape" "Open Guard"}
