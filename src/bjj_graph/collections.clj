@@ -7,7 +7,7 @@
    can operate over not only the conflicting values, but the key as well.
 
    Whereas with clojure.core/merge-with, the function you provide is called like
-   (f val-1 val-2), with merg-with+, the function you provide is called like
+   (f val-1 val-2), with merge-with+, the function you provide is called like
    (f key val-1 val-2)."
   [f & maps]
   (when (some identity maps)
