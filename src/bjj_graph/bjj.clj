@@ -206,7 +206,8 @@
 
    "Guard"
    {"Guard Get-Up"                  "Opponent on Ground"
-    "Straight Armlock (Cross Grip)" "Submitted"}})
+    "Straight Armlock (Cross Grip)" "Submitted"
+    "Kimura Armlock (Stage 1.5)"    "Submitted"}})
 
 (def blue-belt-stripe-1-techniques
   {"Mount"
