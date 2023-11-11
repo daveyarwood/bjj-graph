@@ -164,6 +164,9 @@
    "Standing Guillotine (Arm-In)"
    {"Guillotine Choke (Guard Pull)" "Submitted"}
 
+   "Standing Headlock"
+   {"Standing Headlock Defense (Smart Base)" "Modified Mount"}
+
    "Clinch"
    {"Inside Trip"  "Open Guard"
     "Outside Trip" "Side Mount"}
