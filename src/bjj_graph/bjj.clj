@@ -197,9 +197,16 @@
 
    "Side Mount"
    {"..."                 "Knee-on-Belly"
+    "...."                "High-Low Guard"
     ;; TODO: Refine this into Quarter Guard, then Quarter -> Half, Half ->
     ;; Three-Quarter
     "Half Guard Recovery" "Half Guard"}
+
+   "High-Low Guard"
+   ;; TODO: (GCv2 Lesson 27) You can also put your top knee on the chest and
+   ;; work your way back towards Guard. I'm not sure which fraction of guard
+   ;; you would technically be going into first.
+   {"." "Triangle Setup"}
 
    "Back Mount"
    {"Frame Escape" "Open Guard"}
