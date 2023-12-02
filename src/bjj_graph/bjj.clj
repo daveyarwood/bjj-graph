@@ -175,7 +175,8 @@
    {"Pummel" "Clinch"}
 
    "Opponent on Ground"
-   {"..." "Knee-on-Belly"}
+   {"..."                      "Knee-on-Belly"
+    "Standing Knee Split Pass" "Cross-Chest"}
 
    "Mount"
    {"Trap and Roll (Spread Hand)"      "Open Guard"
