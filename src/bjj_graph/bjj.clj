@@ -161,6 +161,21 @@
     "..."              "Standing Guillotine (Arm-In)"
     "Pisão Front Kick" "Clinch"}
 
+   ;; Does this position have a standard name?
+   "Standing Behind Opponent"
+   {"."           "Rear Clinch"
+    "Knee Buckle" "Pullback"}
+
+   ;; Does this position have a standard name?
+   "Pullback"
+   {"."                "Knee on Belly"
+    ".."               "Sitting Behind Opponent"
+    "Rear Naked Choke" "Submitted"}
+
+   "Sitting Behind Opponent"
+   {"."                "Back Mount"
+    "Rear Naked Choke" "Submitted"}
+
    "Standing Guillotine (Arm-In)"
    {"Guillotine Choke (Guard Pull)" "Submitted"}
 
