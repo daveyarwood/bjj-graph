@@ -232,6 +232,7 @@
 
    "Guard"
    {"Guard Get-Up"                  "Opponent on Ground"
+    "Take the Back (Headlock)"      "Back Mount"
     "Straight Armlock (Cross Grip)" "Submitted"}
 
    "Triangle Stage 1.5"
