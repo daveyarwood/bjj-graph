@@ -176,6 +176,9 @@
    {"."                "Back Mount"
     "Rear Naked Choke" "Submitted"}
 
+   "Standing Guillotine"
+   {"Guillotine Defense (Outside Trip)" "Side Mount"}
+
    "Standing Guillotine (Arm-In)"
    {"Guillotine Choke (Guard Pull)" "Submitted"}
 
