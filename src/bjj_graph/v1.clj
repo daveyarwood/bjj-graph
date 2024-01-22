@@ -193,7 +193,7 @@
    {"Pummel" "Clinch"}
 
    "Opponent on Ground"
-   {"..."                      "Knee-on-Belly"
+   {"..."                      "Knee on Belly"
     "Standing Knee Split Pass" "Cross-Chest"}
 
    "Mount"
@@ -210,12 +210,12 @@
    "S-Mount"
    {"Straight Armlock" "Submitted"}
 
-   "Knee-on-Belly"
+   "Knee on Belly"
    {"."  "Opponent on Ground"
     ".." "Side Mount"}
 
    "Side Mount"
-   {"..."                 "Knee-on-Belly"
+   {"..."                 "Knee on Belly"
     "...."                "High-Low Guard"
     ;; TODO: Refine this into Quarter Guard, then Quarter -> Half, Half ->
     ;; Three-Quarter
