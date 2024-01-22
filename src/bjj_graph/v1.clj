@@ -59,15 +59,20 @@
    {"Shrimp Escape (Block and Shoot)"  "Guard"
     "Shrimp Escape (Shrimp and Shoot)" "Guard"
     "Shrimp Escape (Punch Block)"      "Guard"
-    "Elbow Escape (Knee Drive)"        "Guard"
-    "Elbow Escape (High Step)"         "Guard"
+    "Elbow Escape (Knee Drive)"        "Half Guard"
     "Mount Transition (Knee Drive)"    "Mount"
     "."                                "Modified Side Mount"
     ;; a.k.a. Side Mount Positional Control - Guard Prevention
     ".."                               "Cross-Chest"}
 
    "Modified Side Mount"
-   {"." "Side Mount"}
+   {"."  "Side Mount"
+    ".." "Reverse Cross-Chest"}
+
+   "Reverse Cross-Chest"
+   {"."                            "Modified Side Mount"
+    "Elbow Escape (High Step)"     "Half Guard"
+    "Mount Transition (High Step)" "Mount"}
 
    "Cross-Chest"
    {"." "Side Mount"}
@@ -244,14 +249,7 @@
 (def blue-belt-stripe-1-techniques
   {"Mount"
    {"Figure-Four Armbar" "Submitted"
-    "Cross Choke"        "Submitted"}
-
-   "Modified Side Mount"
-   {".." "Reverse Cross-Chest"}
-
-   "Reverse Cross-Chest"
-   {"."                            "Modified Side Mount"
-    "Mount Transition (High Step)" "Mount"}})
+    "Cross Choke"        "Submitted"}})
 
 (def all-techniques
   (coll/merge-with+
