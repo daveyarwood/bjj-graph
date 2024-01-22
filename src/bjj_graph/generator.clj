@@ -1,5 +1,5 @@
 (ns bjj-graph.generator
-  (:require [bjj-graph.bjj  :as bjj]
+  (:require [bjj-graph.v1   :as v1]
             [clojure.string :as str]
             [ubergraph.core :as uber]))
 
@@ -9,8 +9,8 @@
 
 (defn options
   [from-position]
-  (for [{:keys [dest] :as edge} (uber/out-edges bjj/GRAPH from-position)
-        :let [{:keys [label]} (uber/attrs bjj/GRAPH edge)
+  (for [{:keys [dest] :as edge} (uber/out-edges v1/GRAPH from-position)
+        :let [{:keys [label]} (uber/attrs v1/GRAPH edge)
               label'          (if (dots? label)
                                 dest
                                 label)]]
@@ -64,9 +64,9 @@
 
 (defn random-position
   []
-  (rand-nth (uber/nodes bjj/GRAPH)))
+  (rand-nth (uber/nodes v1/GRAPH)))
 
-(defn random-subgraph
+(defn random-subgraph*
   "Given a starting `position` and an optional `length`, generates a random
    sequence of techniques that can be used logically in sequence, and returns a
    subgraph consisting of those positions and techniques.
@@ -76,18 +76,18 @@
   (let [generated-sequence
         (random-sequence position length)
 
-        {:keys [graph]}
-        (reduce (fn [{:keys [current-position graph]}
+        {:keys [subgraph]}
+        (reduce (fn [{:keys [current-position subgraph]}
                      next-technique-or-position]
                   (if-let [result-of-technique
-                           (get-in bjj/all-techniques
+                           (get-in v1/all-techniques
                                    [current-position next-technique-or-position])]
                     {:current-position
                      result-of-technique
 
-                     :graph
+                     :subgraph
                      (assoc-in
-                       graph
+                       subgraph
                        [current-position next-technique-or-position]
                        result-of-technique)}
                     (let [[dots next-position]
@@ -97,29 +97,62 @@
                                 (and
                                   (dots? k)
                                   (= next-technique-or-position v)))
-                              (get bjj/all-techniques current-position)))]
+                              (get v1/all-techniques current-position)))]
                       {:current-position
                        next-position
 
-                       :graph
+                       :subgraph
                        (assoc-in
-                         graph
+                         subgraph
                          [current-position dots]
                          next-position)})))
                 {:current-position position
-                 :graph            {}}
+                 :subgraph         {}}
                 (next generated-sequence))]
-    (bjj/graph graph)))
+    (v1/graph subgraph)))
 
 (defn print-random-sequence!
-  "A convenient CLI-oriented entrypoint to the random sequence generator."
+  "A CLI entrypoint to generate random valid sequences of techniques and
+   positional transitions."
   [_cli-arg]
   (->> (random-sequence (random-position))
        (str/join "\n")
        println))
 
+(defn random-subgraph
+  "A CLI entrypoint to generate a random sequence of techniques that can be used
+   logically in sequence, and produce a visual subgraph consisting of only those
+   positions and techniques.
+
+   Options:
+
+     :start-position (optional)
+       (e.g. \"Guard\")
+       The position to start generating from.
+
+       When omitted, a position is chosen at random.
+
+     :length (optional)
+       When provided, the sequence (generally) ends after that many steps.
+       Submissions are avoided, unless we're on the last step or we end up going
+       down a path where the only defined options are submissions.
+
+       When omitted, the sequence is of arbitrary length, ending whenever
+       \"Submitted\" is reached.
+
+     :viz-graph-opts (optional)
+       Options to provide to viz-graph.
+
+   "
+  [{:keys [start-position length viz-graph-opts]}]
+  (uber/viz-graph
+    (random-subgraph*
+      (or start-position (random-position))
+      length)
+    (merge {:layout :dot} viz-graph-opts)))
+
 (comment
   (random-sequence "Standing Apart")
   (random-sequence "Mount")
-  (random-sequence (rand-nth (uber/nodes bjj/GRAPH)))
+  (random-sequence (rand-nth (uber/nodes v1/GRAPH)))
   *e)

@@ -1,4 +1,4 @@
-(ns bjj-graph.bjj
+(ns bjj-graph.v1
   (:require [bjj-graph.collections :as coll]
             [clojure.set           :as set]
             [ubergraph.core        :as uber]))
@@ -317,10 +317,3 @@
 ;; graph of just Combatives techniques, vs. Combatives + Master Cycle.
 (def GRAPH
   (graph all-techniques))
-
-(defn viz-graph
-  "A CLI entrypoint to produce a visual graph of positions and techniques."
-  [opts]
-  (uber/viz-graph
-    GRAPH
-    (merge {:layout :dot} opts)))

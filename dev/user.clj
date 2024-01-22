@@ -1,6 +1,7 @@
 (ns user
-  (:require [bjj-graph.bjj        :as bjj]
-            [bjj-graph.generator  :as gen]
+  (:require [bjj-graph.generator  :as gen]
+            [bjj-graph.v1         :as v1]
+            [bjj-graph.visual     :as viz]
             [clojure.java.process :as proc]
             [ubergraph.core       :as uber])
   (:import [java.awt.event WindowListener]
@@ -26,18 +27,16 @@
         (windowOpened [_ _e])))))
 
 (comment
-  (uber/pprint bjj/GRAPH)
+  (uber/pprint v1/GRAPH)
 
   (make-jframes-forever
-    #(uber/viz-graph
-       (gen/random-subgraph "Guard" 3)
-       {:layout :dot}))
+    #(gen/random-subgraph {:start-position "Guard", :length 3}))
 
-  (bjj/viz-graph {})
+  (viz/viz-graph {})
 
   (let [filename (format "/keybase/public/daveyarwood/misc/%s-bjj-graph.svg"
                          (LocalDate/now))]
-    (bjj/viz-graph
+    (viz/viz-graph
       {:save
        {:filename filename
         :format   :svg}})
