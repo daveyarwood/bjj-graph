@@ -162,9 +162,12 @@
 
 (def combatives-v2-bonus-slices
   {"Standing"
-   {".."               "Over-Under Clinch"
-    "..."              "Standing Guillotine (Arm-In)"
-    "Pisão Front Kick" "Clinch"}
+   {".."                "Over-Under Clinch"
+    "..."               "Standing Guillotine (Arm-In)"
+    "Pisão Front Kick"  "Clinch"
+    ;; This could also go to Clinch, if the opponent pulls their arm out
+    ;; (GCv2 Lesson 34)
+    "Standing Arm Drag" "Rear Clinch"}
 
    ;; Does this position have a standard name?
    "Standing Behind Opponent"
