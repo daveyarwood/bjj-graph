@@ -2,6 +2,45 @@
 
 An exploration of graphing the positions and techniques in Brazilian jiu-jitsu.
 
+## Models
+
+### v1
+
+<img
+  src="examples/v1-random-subgraph.svg"
+  alt="a graph of jiu-jitsu techniques"
+  height="500px" >
+
+> _This is a randomly generated subgraph, starting at Mount and randomly
+> choosing valid techniques and positions until a submission occurs. The full
+> graph is much too large to display here!_
+
+My first stab at this (2021-2024) reflected my simplistic understanding of
+jiu-jitsu as a beginner. The initial idea was that when you are in a position
+(node), there are a set of techniques (edges) that you can use to take you into
+a new position.
+
+For example, when you are on the bottom of the Mount position, you can perform a
+Trap and Roll technique to take you to the top of Open Guard.
+
+### v2
+
+> TODO: Implement this new approach and include a graph here
+
+As my practice and understanding of jiu-jitsu developed, I realized that the
+model should be more nuanced. When you execute a Trap and Roll, your opponent
+can counter with Super Hooks, and the outcome is that you're still in the bottom
+of the Mount position.
+
+I had left out techniques like Super Hooks from the v1 model, because it didn't
+seem like there was a natural place for them. The v2 model solves this problem
+by modeling both positions _and_ techniques as nodes. A node represents a
+temporary state, and my higher-level understanding of jiu-jitsu now tells me
+that when you are either holding a position or executing a technique, those are
+both states that can be explored, with various outcomes depending on what your
+opponent is doing.
+
+
 ## Graph visualization
 
 This project uses the ubergraph library to construct the graph and graphviz
@@ -56,6 +95,8 @@ Americana Armlock (Standard)
 
 ### `bin/random-subgraph`
 
+> _The graphs above were generated via this script._
+
 `bin/random-subgraph` takes a starting position and an optional length and
 generates steps in the same way as `random-sequence`, but rather than printing
 the steps in text form, it visualizes the subgraph that the randomly generated
@@ -79,37 +120,6 @@ bin/random-subgraph \
     :viz-graph-opts {:save {:format :png, :filename \"$filename\"}}}"
 firefox "$filename"
 ```
-
-## Models
-
-### v1
-
-> TODO: Show off graphs, generation of jiu-jitsu sequences
-
-My first stab at this (2021-2024) reflected my simplistic understanding of
-jiu-jitsu as a beginner. The initial idea was that when you are in a position
-(node), there are a set of techniques (edges) that you can use to take you into
-a new position.
-
-For example, when you are on the bottom of the Mount position, you can perform a
-Trap and Roll technique to take you to the top of Open Guard.
-
-### v2
-
-> TODO: Show off graphs, generation of jiu-jitsu sequences
-
-As my practice and understanding of jiu-jitsu developed, I realized that the
-model should be more nuanced. When you execute a Trap and Roll, your opponent
-can counter with Super Hooks, and the outcome is that you're still in the bottom
-of the Mount position.
-
-I had left out techniques like Super Hooks from the v1 model, because it didn't
-seem like there was a natural place for them. The v2 model solves this problem
-by modeling both positions _and_ techniques as nodes. A node represents a
-temporary state, and my higher-level understanding of jiu-jitsu now tells me
-that when you are either holding a position or executing a technique, those are
-both states that can be explored, with various outcomes depending on what your
-opponent is doing.
 
 ## License
 
