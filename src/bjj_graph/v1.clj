@@ -235,8 +235,15 @@
    ;; you would technically be going into first.
    {"." "Triangle Setup"}
 
+   "Twisting Arm Control"
+   {"Forced Back Mount" "Back Mount"}
+
    "Back Mount"
-   {"Frame Escape" "Open Guard"}
+   {"."            "Triple Threat"
+    "Frame Escape" "Open Guard"}
+
+   "Triple Threat"
+   {"Straight Armlock" "Submitted"}
 
    "Half Guard"
    {"Tripod Pass" "Cross-Chest"}
