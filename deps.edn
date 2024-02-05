@@ -13,7 +13,7 @@
   {:exec-fn bjj-graph.visual/viz-graph}
 
   :random-sequence
-  {:exec-fn bjj-graph.generator/print-random-sequence!}
+  {:exec-fn bjj-graph.generator/random-sequence}
 
   :random-subgraph
   {:exec-fn bjj-graph.generator/random-subgraph}}}

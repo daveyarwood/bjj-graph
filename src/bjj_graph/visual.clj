@@ -1,10 +1,15 @@
 (ns bjj-graph.visual
-  (:require [bjj-graph.v1   :as v1]
-            [ubergraph.core :as uber]))
+  (:require [bjj-graph.swing    :as swing]
+            [bjj-graph.versions :as versions]
+            [ubergraph.core     :as uber]))
 
 (defn viz-graph
   "A CLI entrypoint to produce a visual graph of positions and techniques."
-  [opts]
-  (uber/viz-graph
-    v1/GRAPH
-    (merge {:layout :dot} opts)))
+  [{:keys [version]
+    :or {version 1}
+    :as opts}]
+  (cond-> (uber/viz-graph
+            (versions/graph-version version)
+            (merge {:layout :dot} (dissoc opts :version)))
+    (not (:save opts))
+    (swing/on-close #(System/exit 0))))
