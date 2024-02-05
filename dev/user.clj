@@ -1,12 +1,11 @@
 (ns user
   (:require [bjj-graph.generator  :as gen]
+            [bjj-graph.swing      :as swing]
             [bjj-graph.v1         :as v1]
             [bjj-graph.visual     :as viz]
             [clojure.java.process :as proc]
             [ubergraph.core       :as uber])
-  (:import [java.awt.event WindowListener]
-           [java.time LocalDate]
-           [javax.swing JFrame]))
+  (:import [java.time LocalDate]))
 
 (defn- make-jframes-forever
   "Repeatedly calls `jframe-fn`, a function that creates a JFrame. Each new
@@ -14,17 +13,8 @@
 
    (The only way to make this stop is to Ctrl-C your REPL.)"
   [jframe-fn]
-  (let [^JFrame jframe (jframe-fn)]
-    (.addWindowListener
-      jframe
-      (reify WindowListener
-        (windowActivated [_ _e])
-        (windowClosing [_ _e] (make-jframes-forever jframe-fn))
-        (windowClosed [_ _e])
-        (windowDeactivated [_ _e])
-        (windowDeiconified [_ _e])
-        (windowIconified [_ _e])
-        (windowOpened [_ _e])))))
+  (-> (jframe-fn)
+      (swing/on-close #(make-jframes-forever jframe-fn))))
 
 (comment
   (uber/pprint v1/GRAPH)
