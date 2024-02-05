@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+testing() {
+  thing="$1"
+
+  echo -e "\n----- Testing $thing -----\n"
+}
+
+timestamp() {
+  date '+%Y%m%d%H%M%S'
+}
+
+################################################################################
+
+testing "viz-graph - no args"
+
+"$(dirname "$0")/viz-graph"
+
+################################################################################
+
+testing "viz-graph v1 - save to file, open in Firefox"
+
+filename="/tmp/bjj-graph-$(timestamp).svg"
+
+"$(dirname "$0")/viz-graph" \
+  "{:version 1, :save {:format :svg, :filename \"$filename\"}}"
+
+firefox "$filename"
+
+################################################################################
+
+testing "random-sequence - no args"
+
+"$(dirname "$0")/random-sequence"
+
+################################################################################
+
+testing "random-subgraph - no args"
+
+"$(dirname "$0")/random-subgraph"
+
+################################################################################
+
+testing "random-subgraph v1 - save to file, open in Firefox"
+
+filename="/tmp/random-subgraph-$(timestamp).png"
+
+"$(dirname "$0")/random-subgraph" \
+  "{:start-position \"Mount\",
+    :viz-graph-opts {:save {:format :png, :filename \"$filename\"}}}"
+
+firefox "$filename"
