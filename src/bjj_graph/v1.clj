@@ -251,7 +251,8 @@
    "Guard"
    {"Guard Get-Up"                  "Opponent on Ground"
     "Take the Back (Headlock)"      "Back Mount"
-    "Straight Armlock (Cross Grip)" "Submitted"}
+    "Straight Armlock (Cross Grip)" "Submitted"
+    "Knee Split Pass"               "Cross-Chest"}
 
    "Triangle Stage 1.5"
    {"Kimura Armlock (Stage 1.5)" "Submitted"}})
