@@ -31,6 +31,17 @@ firefox "$filename"
 
 ################################################################################
 
+testing "viz-graph v2 - save to file, open in Firefox"
+
+filename="/tmp/bjj-graph-$(timestamp).svg"
+
+"$(dirname "$0")/viz-graph" \
+  "{:version 2, :save {:format :svg, :filename \"$filename\"}}"
+
+firefox "$filename"
+
+################################################################################
+
 testing "random-sequence - no args"
 
 "$(dirname "$0")/random-sequence"

@@ -5,11 +5,11 @@
 
 (defn viz-graph
   "A CLI entrypoint to produce a visual graph of positions and techniques."
-  [{:keys [version]
+  [{:keys [version no-exit?]
     :or {version 1}
     :as opts}]
   (cond-> (uber/viz-graph
             (versions/graph-version version)
-            (merge {:layout :dot} (dissoc opts :version)))
-    (not (:save opts))
+            (merge {:layout :dot} (dissoc opts :version :no-exit?)))
+    (not (or (:save opts) no-exit?))
     (swing/on-close #(System/exit 0))))
