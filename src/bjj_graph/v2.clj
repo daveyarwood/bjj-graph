@@ -45,9 +45,7 @@
 
 (def combatives
   {"Mount"
-   {::transitions   ["High Mount"]
-    "Hand on chest" "Trap and Roll"
-    "Headlock"      "Mount + headlock"}
+   {::transitions ["Low Mount" "High Mount"]}
 
    "Mount + headlock"
    {::transitions ["Trap and Roll"
@@ -59,11 +57,15 @@
    "Americana Armlock + headlock"
    {"Unloop" "Americana Armlock"}
 
-   "High Mount"
-   {::transitions ["High Mount + 2-on-1 arm pin"]
-    "Punch block" "Mount + back wrap"}
+   "Low Mount"
+   {"Headlock" "Mount + headlock"}
 
-   "High Mount + 2-on-1 arm pin"
+   "High Mount"
+   {::transitions   ["Mount + 2-on-1 arm pin"]
+    "Hand on chest" "Trap and Roll"
+    "Punch block"   "Mount + back wrap"}
+
+   "Mount + 2-on-1 arm pin"
    {::transitions ["Americana Armlock"]}
 
    "Americana Armlock"
@@ -135,7 +137,7 @@
   {"Mount"
    {"Spread hands" "Trap and Roll"}
 
-   "High Mount + 2-on-1 arm pin"
+   "Mount + 2-on-1 arm pin"
    {::transitions ["Attempted Americana + heavy elbow"]}
 
    "Attempted Americana + heavy elbow"
