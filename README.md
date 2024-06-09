@@ -40,7 +40,6 @@ that when you are either holding a position or executing a technique, those are
 both states that can be explored, with various outcomes depending on what your
 opponent is doing.
 
-
 ## Graph visualization
 
 This project uses the ubergraph library to construct the graph and graphviz
