@@ -208,7 +208,7 @@
                       v)
 
                  :else
-                 [[node v {:label k}]])))))))
+                 [[node v {:label (format "<I>%s</I>" k)}]])))))))
 
 ;; TODO: Make the sets of techniques configurable, e.g. to allow generating a
 ;; graph of just Combatives techniques, vs. Combatives + Master Cycle.
