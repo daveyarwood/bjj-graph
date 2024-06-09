@@ -47,6 +47,13 @@
   {"Mount"
    {::transitions ["Low Mount" "High Mount"]}
 
+   ;; Low Mount
+
+   "Low Mount"
+   {::transitions ["Mount + bottom person turns to side"]
+    "Headlock"    "Mount + headlock"
+    "Bench press" "Mount + bench press"}
+
    "Mount + headlock"
    {::transitions ["Trap and Roll"
                    "Mount + headlock + wrist isolation"]}
@@ -54,14 +61,18 @@
    "Mount + headlock + wrist isolation"
    {::transitions ["Americana Armlock + headlock"]}
 
+   "Mount + bench press"
+   {::transitions ["Straight Armlock (Seated)"]
+    "High Swim"   "Low Mount"}
+
    "Americana Armlock + headlock"
    {"Unloop" "Americana Armlock"}
 
-   "Low Mount"
-   {"Headlock" "Mount + headlock"}
+   ;; High Mount
 
    "High Mount"
-   {::transitions   ["Mount + 2-on-1 arm pin"]
+   {::transitions   ["Mount + 2-on-1 arm pin"
+                     "Mount + bottom person turns to side"]
     "Hand on chest" "Trap and Roll"
     "Punch block"   "Mount + back wrap"}
 
@@ -77,6 +88,38 @@
    "Trap and Roll"
    {::transitions ["Open Guard"]}
 
+   ;; Modified Mount
+
+   "Mount + bottom person turns to side"
+   {::transitions ["Modified Mount"]}
+
+   "Modified Mount"
+   {"Bottom person faces down" "Back Mount Setup"}
+
+   ;; Back Mount
+
+   "Back Mount Setup"
+   {::transitions ["Back Mount (Strong Side)" "Back Mount (Weak Side)"]}
+
+   "Back Mount (Strong Side)"
+   {::transitions ["Rear Naked Choke"]
+    "Lose hook"   "Back Mount (Strong Side) + lost hook"}
+
+   "Back Mount (Strong Side) + lost hook"
+   {"Remount" "Mount"}
+
+   "Back Mount (Weak Side)"
+   {::transitions ["Rear Naked Choke"]
+    "Lose hook"   "Back Mount (Weak Side) + lost hook"}
+
+   "Back Mount (Weak Side) + lost hook"
+   {"Remount" "Mount"}
+
+   "Rear Naked Choke"
+   {::submission? true}
+
+   ;; Guard
+
    "Open Guard"
    {"Cross feet"      "Guard"
     "Open Guard Pass" "Mount"}
@@ -85,7 +128,7 @@
    {::transitions                   ["Punch Block Stage 1.5"
                                      "Punch Block Stage 3"
                                      "Punch Block Stage 4"]
-    "Hand on chest"                 "Straight Armlock"
+    "Hand on chest"                 "Straight Armlock (Guard)"
     "Upper body crush"              "Giant Killer"
     "Upper body crush + leg posted" "Elevator Sweep"}
 
@@ -114,9 +157,13 @@
    {::transitions ["Side Mount"]
     "Rollover"    "Punch Block Stage 4"}
 
-   "Straight Armlock"
+   "Straight Armlock (Guard)"
    {::submission?   true
-    "Pull arm back" "Triangle Setup"}
+    "Pull arm back" "Triangle Setup"
+    "Fall sideways" "Straight Armlock (Seated)"}
+
+   "Straight Armlock (Seated)"
+   {::submission? true}
 
    "Giant Killer"
    {::transitions ["Triangle Setup"]}
@@ -141,7 +188,20 @@
    {::transitions ["Attempted Americana + heavy elbow"]}
 
    "Attempted Americana + heavy elbow"
-   {"Side entry" "Americana Armlock"}})
+   {"Side entry" "Americana Armlock"}
+
+   "Mount + bottom person turns to side"
+   {::transitions ["Half Nelson"]}
+
+   "Modified Mount"
+   ;; From Lesson 4: Take the Back (Mount)
+   {"Rider Transition" "Back Mount (Face Down)"}
+
+   "Back Mount (Face Down)"
+   {"Lift head" "Back Mount (Face Down) - One-armed choke"}
+
+   "Back Mount (Face Down) - One-armed choke"
+   {::submission? true}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
