@@ -177,8 +177,26 @@
    "Elevator Sweep"
    {::transitions ["Mount"]}
 
+   ;; Side Mount
+
    "Side Mount"
-   {}})
+   {}
+
+   ;; Standing
+
+   "Standing"
+   {::transitions ["Clinch"]}
+
+   "Clinch"
+   {"Bladed stance"          "Leg Hook Takedown"
+    "Push down on shoulders" "Body Fold Takedown"
+    "Lean back to punch"     "Body Fold Takedown"}
+
+   "Leg Hook Takedown"
+   {::transitions ["Opponent on Ground" "Mount"]}
+
+   "Body Fold Takedown"
+   {::transitions ["Opponent on Ground" "Mount"]}})
 
 (def combatives-v2-bonus-slices
   {"Mount"
@@ -208,7 +226,13 @@
    {"Lift head" "Back Mount (Face Down) - One-armed choke"}
 
    "Back Mount (Face Down) - One-armed choke"
-   {::submission? true}})
+   {::submission? true}
+
+   "Clinch"
+   {::transitions ["Outside Trip"]}
+
+   "Outside Trip"
+   {::transitions ["Side Mount"]}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
