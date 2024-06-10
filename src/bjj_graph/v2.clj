@@ -197,6 +197,13 @@
    ;; From Lesson 4: Take the Back (Mount)
    {"Rider Transition" "Back Mount (Face Down)"}
 
+   "Back Mount (Strong Side)"
+   {"Crossover"    "Back Mount (Weak Side)"
+    "Frame Escape" "Open Guard"}
+
+   "Back Mount (Weak Side)"
+   {"Crossover" "Back Mount (Strong Side)"}
+
    "Back Mount (Face Down)"
    {"Lift head" "Back Mount (Face Down) - One-armed choke"}
 
