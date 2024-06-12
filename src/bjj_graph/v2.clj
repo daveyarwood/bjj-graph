@@ -229,6 +229,9 @@
    "Back Mount (Face Down) - One-armed choke"
    {::submission? true}
 
+   "Guard"
+   {"Guard Get-Up" "Opponent on Ground"}
+
    "Standing"
    {::transitions ["Over-Under Clinch"]}
 
