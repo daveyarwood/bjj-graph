@@ -50,7 +50,7 @@
    ;; Low Mount
 
    "Low Mount"
-   {::transitions ["Mount + bottom person turns to side"]
+   {::transitions ["High Mount" "Mount + bottom person turns to side"]
     "Headlock"    "Mount + headlock"
     "Bench press" "Mount + bench press"}
 
@@ -71,7 +71,8 @@
    ;; High Mount
 
    "High Mount"
-   {::transitions   ["Mount + 2-on-1 arm pin"
+   {::transitions   ["Low Mount"
+                     "Mount + 2-on-1 arm pin"
                      "Mount + bottom person turns to side"]
     "Hand on chest" "Trap and Roll"
     "Punch block"   "Mount + back wrap"}
@@ -94,7 +95,8 @@
    {::transitions ["Modified Mount"]}
 
    "Modified Mount"
-   {"Bottom person faces down" "Back Mount Setup"}
+   {::transitions              ["Straight Armlock (Seated)"]
+    "Bottom person faces down" "Back Mount Setup"}
 
    ;; Back Mount
 
@@ -201,6 +203,9 @@
 
 (def combatives-v2-bonus-slices
   {"Mount"
+   {::transitions ["S-Mount"]}
+
+   "Low Mount"
    {"Spread hands" "Trap and Roll"}
 
    "Mount + 2-on-1 arm pin"
@@ -215,6 +220,9 @@
    "Modified Mount"
    ;; From Lesson 4: Take the Back (Mount)
    {"Rider Transition" "Back Mount (Face Down)"}
+
+   "S-Mount"
+   {::transitions ["Straight Armlock (Seated)"]}
 
    "Back Mount (Strong Side)"
    {"Crossover"    "Back Mount (Weak Side)"
