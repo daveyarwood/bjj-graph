@@ -185,7 +185,8 @@
    ;; Standing
 
    "Standing"
-   {::transitions ["Clinch"]}
+   {"Aggressive Opponent"   "Clinch"
+    "Conservative Opponent" "Clinch"}
 
    "Clinch"
    {"Bladed stance"          "Leg Hook Takedown"
@@ -227,6 +228,15 @@
 
    "Back Mount (Face Down) - One-armed choke"
    {::submission? true}
+
+   "Standing"
+   {::transitions ["Over-Under Clinch"]}
+
+   "Over-Under Clinch"
+   {::transitions ["Pummel"]}
+
+   "Pummel"
+   {::transitions ["Clinch" "Over-Under Clinch"]}
 
    "Clinch"
    {::transitions ["Outside Trip"]}
