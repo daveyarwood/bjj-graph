@@ -132,7 +132,8 @@
                                      "Punch Block Stage 4"]
     "Hand on chest"                 "Straight Armlock (Guard)"
     "Upper body crush"              "Giant Killer"
-    "Upper body crush + leg posted" "Elevator Sweep"}
+    "Upper body crush + leg posted" "Elevator Sweep"
+    "Headlock + leg posted"         "Elevator Sweep"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Triangle Setup"
