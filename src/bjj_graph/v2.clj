@@ -199,9 +199,19 @@
    ;; Side Mount
 
    "Side Mount"
-   {}
+   {::transitions ["Cross-Chest" "Modified Side Mount"]
+    "Knee Drive"  "Mount + headlock"}
+
+   "Cross-Chest"
+   {::transitions ["Side Mount"]}
+
+   "Modified Side Mount"
+   {::transitions ["Side Mount"]}
 
    ;; Standing
+
+   "Opponent on Ground"
+   {}
 
    "Standing"
    {"Aggressive Opponent"   "Clinch"
@@ -268,6 +278,15 @@
 
    "Triangle Choke + slam prevention"
    {::submission? true}
+
+   "Side Mount"
+   {::transitions ["Knee on Belly"]}
+
+   "Knee on Belly"
+   {::transitions ["Side Mount" "Opponent on Ground"]}
+
+   "Opponent on Ground"
+   {::transitions ["Knee on Belly"]}
 
    "Standing"
    {::transitions ["Over-Under Clinch"]}
