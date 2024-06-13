@@ -50,9 +50,14 @@
    ;; Low Mount
 
    "Low Mount"
-   {::transitions ["High Mount" "Mount + bottom person turns to side"]
-    "Headlock"    "Mount + headlock"
-    "Bench press" "Mount + bench press"}
+   {::transitions  ["High Mount" "Mount + bottom person turns to side"
+                    "Mount + hooks" "Elbow Escape"]
+    "Headlock"     "Mount + headlock"
+    "Bench press"  "Mount + bench press"
+    "Elbow Escape" "Quarter Guard"}
+
+   "Mount + hooks"
+   {"Hook Removal" "Low Mount"}
 
    "Mount + headlock"
    {::transitions ["Trap and Roll"
@@ -121,6 +126,17 @@
    {::submission? true}
 
    ;; Guard
+
+   "Quarter Guard"
+   {"Standard"  "Half Guard"
+    "Fish Hook" "Half Guard"
+    "Heel Drag" "Half Guard"}
+
+   "Half Guard"
+   {::transitions ["Three-Quarter Guard"]}
+
+   "Three-Quarter Guard"
+   {::transitions ["Guard"]}
 
    "Open Guard"
    {"Cross feet"      "Guard"
@@ -237,6 +253,12 @@
 
    "Back Mount (Face Down) - One-armed choke"
    {::submission? true}
+
+   "Half Guard"
+   {::transitions ["Half Guard + headlock"]}
+
+   "Half Guard + headlock"
+   {"Surprise Roll" "Half Guard"}
 
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}
