@@ -168,7 +168,7 @@
    {::submission? true}
 
    "Giant Killer"
-   {::transitions ["Triangle Setup"]}
+   {::transitions ["Triangle Setup" "Triangle Choke"]}
 
    "Triangle Setup"
    {::transitions ["Triangle Choke"]}
@@ -239,6 +239,12 @@
 
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}
+
+   "Triangle Choke"
+   {::transitions ["Triangle Choke + slam prevention"]}
+
+   "Triangle Choke + slam prevention"
+   {::submission? true}
 
    "Standing"
    {::transitions ["Over-Under Clinch"]}
