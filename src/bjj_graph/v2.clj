@@ -50,11 +50,14 @@
    ;; Low Mount
 
    "Low Mount"
-   {::transitions  ["High Mount" "Mount + bottom person turns to side"
-                    "Mount + hooks" "Elbow Escape"]
-    "Headlock"     "Mount + headlock"
-    "Bench press"  "Mount + bench press"
-    "Elbow Escape" "Quarter Guard"}
+   {::transitions             ["High Mount"
+                               "Mount + bottom person turns to side"
+                               "Mount + hooks"
+                               "Elbow Escape"]
+    "Headlock"                "Mount + headlock"
+    "Bottom person headlocks" "Modified Mount + headlock"
+    "Bench press"             "Mount + bench press"
+    "Elbow Escape"            "Quarter Guard"}
 
    "Mount + hooks"
    {"Hook Removal" "Low Mount"}
@@ -99,8 +102,11 @@
    "Mount + bottom person turns to side"
    {::transitions ["Modified Mount"]}
 
+   "Modified Mount + headlock"
+   {"Release" "Modified Mount"}
+
    "Modified Mount"
-   {::transitions              ["Straight Armlock (Seated)"]
+   {::transitions              ["Low Mount" "Straight Armlock (Seated)"]
     "Bottom person faces down" "Back Mount Setup"}
 
    ;; Back Mount
@@ -193,6 +199,9 @@
    "Triangle Choke"
    {::submission? true}
 
+   "Guillotine Choke (Guard)"
+   {::submission? true}
+
    "Elevator Sweep"
    {::transitions ["Mount"]}
 
@@ -201,6 +210,9 @@
    "Side Mount"
    {::transitions ["Cross-Chest" "Modified Side Mount"]
     "Knee Drive"  "Mount + headlock"}
+
+   "Side Mount + guillotine"
+   {"Forearm choke" "Side Mount"}
 
    "Cross-Chest"
    {::transitions ["Side Mount"]}
@@ -215,25 +227,33 @@
 
    "Standing"
    {"Aggressive Opponent"   "Clinch"
-    "Conservative Opponent" "Clinch"}
+    "Conservative Opponent" "Clinch"
+    "Tackle attempt"        "Guillotine Choke (Standing)"}
 
    "Clinch"
-   {"Bladed stance"          "Leg Hook Takedown"
-    "Push down on shoulders" "Body Fold Takedown"
-    "Lean back to punch"     "Body Fold Takedown"}
+   {"Bladed stance"            "Leg Hook Takedown"
+    "Push down on shoulders"   "Body Fold Takedown"
+    "Lean back to punch"       "Body Fold Takedown"
+    "Head too far to the side" "Guillotine Choke (Standing)"}
 
    "Leg Hook Takedown"
    {::transitions ["Opponent on Ground" "Mount"]}
 
    "Body Fold Takedown"
-   {::transitions ["Opponent on Ground" "Mount"]}})
+   {::transitions ["Opponent on Ground" "Mount"]}
+
+   "Guillotine Choke (Standing)"
+   {::submission?              true
+    "Guillotine Choke Defense" "Side Mount + guillotine"
+    "Pull Guard"               "Guillotine Choke (Guard)"}})
 
 (def combatives-v2-bonus-slices
   {"Mount"
    {::transitions ["S-Mount"]}
 
    "Low Mount"
-   {"Spread hands" "Trap and Roll"}
+   {"Spread hands"              "Trap and Roll"
+    "Bottom person guillotines" "Mount + guillotine"}
 
    "Mount + 2-on-1 arm pin"
    {::transitions ["Attempted Americana + heavy elbow"]}
@@ -243,6 +263,9 @@
 
    "Mount + bottom person turns to side"
    {::transitions ["Half Nelson"]}
+
+   "Mount + guillotine"
+   {"Dismount" "Side Mount + guillotine"}
 
    "Modified Mount"
    ;; From Lesson 4: Take the Back (Mount)
