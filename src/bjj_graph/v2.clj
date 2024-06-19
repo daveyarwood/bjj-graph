@@ -292,16 +292,21 @@
    {::transitions ["Over-Under Clinch"]}
 
    "Over-Under Clinch"
-   {::transitions ["Pummel"]}
+   {::transitions ["Pummel"]
+    "Leg inside"  "Inside Trip"}
 
    "Pummel"
    {::transitions ["Clinch" "Over-Under Clinch"]}
 
    "Clinch"
-   {::transitions ["Outside Trip"]}
+   {::transitions ["Outside Trip"]
+    "Leg inside"  "Inside Trip"}
 
    "Outside Trip"
-   {::transitions ["Side Mount"]}})
+   {::transitions ["Side Mount"]}
+
+   "Inside Trip"
+   {::transitions ["Open Guard"]}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
