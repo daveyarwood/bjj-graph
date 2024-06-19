@@ -289,7 +289,8 @@
    {::transitions ["Knee on Belly"]}
 
    "Standing"
-   {::transitions ["Over-Under Clinch"]}
+   {::transitions      ["Over-Under Clinch"]
+    "Pisão Front Kick" "Clinch"}
 
    "Over-Under Clinch"
    {::transitions ["Pummel"]
