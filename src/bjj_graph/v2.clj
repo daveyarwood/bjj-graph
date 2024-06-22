@@ -226,12 +226,14 @@
    {}
 
    "Standing"
-   {"Aggressive Opponent"   "Clinch"
+   {::transitions           ["Double Leg Takedown"]
+    "Aggressive Opponent"   "Clinch"
     "Conservative Opponent" "Clinch"
     "Tackle attempt"        "Guillotine Choke (Standing)"}
 
    "Clinch"
-   {"Bladed stance"            "Leg Hook Takedown"
+   {::transitions              ["Rear Clinch"]
+    "Bladed stance"            "Leg Hook Takedown"
     "Push down on shoulders"   "Body Fold Takedown"
     "Lean back to punch"       "Body Fold Takedown"
     "Head too far to the side" "Guillotine Choke (Standing)"}
@@ -242,10 +244,18 @@
    "Body Fold Takedown"
    {::transitions ["Opponent on Ground" "Mount"]}
 
+   "Double Leg Takedown"
+   {::transitions ["Side Mount"]}
+
    "Guillotine Choke (Standing)"
    {::submission?              true
+    "Look up, circle around"   "Rear Clinch"
     "Guillotine Choke Defense" "Side Mount + guillotine"
-    "Pull Guard"               "Guillotine Choke (Guard)"}})
+    "Pull Guard"               "Guillotine Choke (Guard)"}
+
+   "Rear Clinch"
+   {::transitions   ["Clinch"]
+    "Rear Takedown" "Modified Mount"}})
 
 (def combatives-v2-bonus-slices
   {"Mount"
@@ -330,7 +340,10 @@
    {::transitions ["Side Mount"]}
 
    "Inside Trip"
-   {::transitions ["Open Guard"]}})
+   {::transitions ["Open Guard"]}
+
+   "Rear Takedown"
+   {"They don't fall" "Clinch"}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
