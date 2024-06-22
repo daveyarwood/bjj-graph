@@ -220,10 +220,28 @@
    "Modified Side Mount"
    {::transitions ["Side Mount"]}
 
+   "Seated Headlock"
+   {"Frame Escape"       "Headlock Escape 1"
+    "Can't insert frame" "Headlock Escape 2"}
+
+   "Headlock Escape 1"
+   {::transitions ["Scissor Choke"]
+    "Super Lock"  "Modified Mount + headlock"}
+
+   "Scissor Choke"
+   {::submission? true
+    ::transitions ["Scissor Follow-Up"]}
+
+   "Scissor Follow-Up"
+   {::transitions ["Modified Side Mount"]}
+
+   "Headlock Escape 2"
+   {} ; TODO
+
    ;; Standing
 
    "Opponent on Ground"
-   {}
+   {::transitions ["Seated Headlock"]}
 
    "Standing"
    {::transitions           ["Double Leg Takedown"]
@@ -232,7 +250,7 @@
     "Tackle attempt"        "Guillotine Choke (Standing)"}
 
    "Clinch"
-   {::transitions              ["Rear Clinch"]
+   {::transitions              ["Rear Clinch" "Standing Headlock"]
     "Bladed stance"            "Leg Hook Takedown"
     "Push down on shoulders"   "Body Fold Takedown"
     "Lean back to punch"       "Body Fold Takedown"
@@ -246,6 +264,9 @@
 
    "Double Leg Takedown"
    {::transitions ["Side Mount"]}
+
+   "Standing Headlock"
+   {::transitions ["Seated Headlock"]}
 
    "Guillotine Choke (Standing)"
    {::submission?              true
@@ -313,7 +334,12 @@
    {::submission? true}
 
    "Side Mount"
-   {::transitions ["Knee on Belly"]}
+   {::transitions                 ["Knee on Belly" "Seated Headlock"]
+    ;; Bonus slice from Lesson 18: Heodlock Escape 1
+    "Headlock attempt, back take" "Back Mount (Weak Side)"}
+
+   "Seated Headlock"
+   {::transitions ["Side Mount"]}
 
    "Knee on Belly"
    {::transitions ["Side Mount" "Opponent on Ground"]}
