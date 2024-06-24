@@ -260,7 +260,8 @@
     "Bladed stance"            "Leg Hook Takedown"
     "Push down on shoulders"   "Body Fold Takedown"
     "Lean back to punch"       "Body Fold Takedown"
-    "Head too far to the side" "Guillotine Choke (Standing)"}
+    "Head too far to the side" "Guillotine Choke (Standing)"
+    "Hips far"                 "Pull Guard"}
 
    "Leg Hook Takedown"
    {::transitions ["Opponent on Ground" "Mount"]}
@@ -282,7 +283,10 @@
 
    "Rear Clinch"
    {::transitions   ["Clinch"]
-    "Rear Takedown" "Modified Mount"}})
+    "Rear Takedown" "Modified Mount"}
+
+   "Pull Guard"
+   {::transitions ["Guard"]}})
 
 (def combatives-v2-bonus-slices
   {"Mount"
