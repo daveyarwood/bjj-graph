@@ -152,7 +152,8 @@
    {::transitions                   ["Punch Block Stage 1.5"
                                      "Punch Block Stage 3"
                                      "Punch Block Stage 4"]
-    "Hand on chest"                 "Straight Armlock (Guard)"
+    "Hand on chest (low)"            "Straight Armlock (Guard)"
+    "Hand on chest (high)"           "Straight Armlock (Guard)"
     "Upper body crush"              "Giant Killer"
     "Upper body crush + leg posted" "Elevator Sweep"
     "Headlock + leg posted"         "Elevator Sweep"}
