@@ -156,7 +156,8 @@
     "Hand on chest (high)"           "Straight Armlock (Guard)"
     "Upper body crush"              "Giant Killer"
     "Upper body crush + leg posted" "Elevator Sweep"
-    "Headlock + leg posted"         "Elevator Sweep"}
+    "Headlock + leg posted"         "Elevator Sweep"
+    "Stand up + feet close"         "Double Ankle Sweep"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Triangle Setup"
@@ -206,6 +207,10 @@
    "Elevator Sweep"
    {::transitions ["Mount"]}
 
+   "Double Ankle Sweep"
+   {"Knee Thrust" "Low Mount"
+    "Kick"        "Opponent on Ground"}
+
    ;; Side Mount
 
    "Side Mount"
@@ -242,7 +247,7 @@
    ;; Standing
 
    "Opponent on Ground"
-   {::transitions ["Seated Headlock"]}
+   {::transitions ["Seated Headlock" "Side Mount"]}
 
    "Standing"
    {::transitions           ["Double Leg Takedown"]
@@ -333,6 +338,12 @@
 
    "Triangle Choke + slam prevention"
    {::submission? true}
+
+   "Double Ankle Sweep"
+   {"Counter" "Knee Split"}
+
+   "Knee Split"
+   {}
 
    "Side Mount"
    {::transitions                 ["Knee on Belly" "Seated Headlock"]
