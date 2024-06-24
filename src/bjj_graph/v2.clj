@@ -242,7 +242,9 @@
    {::transitions ["Modified Side Mount"]}
 
    "Headlock Escape 2"
-   {} ; TODO
+   {"Standard"    "Modified Mount + headlock"
+    "Super Base"  "Modified Mount + headlock"
+    "Punch Block" "Modified Mount + headlock"}
 
    ;; Standing
 
@@ -356,6 +358,9 @@
 
    "Seated Headlock"
    {::transitions ["Side Mount"]}
+
+   "Headlock Escape 2"
+   {"Surprise Roll" "Modified Mount + headlock"}
 
    "Knee on Belly"
    {::transitions ["Side Mount" "Opponent on Ground"]}
