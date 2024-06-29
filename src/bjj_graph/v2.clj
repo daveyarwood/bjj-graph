@@ -157,7 +157,9 @@
     "Upper body crush"              "Giant Killer"
     "Upper body crush + leg posted" "Elevator Sweep"
     "Headlock + leg posted"         "Elevator Sweep"
-    "Stand up + feet close"         "Double Ankle Sweep"}
+    "Stand up + feet close"         "Double Ankle Sweep"
+    "Hands posted on ground"        "Kimura Armlock (Guard)"
+    "Arm over head"                 "Kimura Armlock (Guard)"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Triangle Setup"
@@ -203,6 +205,9 @@
    {::submission? true}
 
    "Guillotine Choke (Guard)"
+   {::submission? true}
+
+   "Kimura Armlock (Guard)"
    {::submission? true}
 
    "Elevator Sweep"
@@ -342,6 +347,9 @@
 
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}
+
+   "Punch Block Stage 1.5"
+   {::transitions ["Kimura Armlock (Guard)"]}
 
    "Arm-In Guillotine (Guard)"
    {::submission? true}
