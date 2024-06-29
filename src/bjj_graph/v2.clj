@@ -175,9 +175,10 @@
                    "Punch Block Stage 5"]}
 
    "Punch Block Stage 4"
-   {::transitions ["Guard"
-                   "Punch Block Stage 5"
-                   "Toss legs aside"]}
+   {::transitions   ["Guard"
+                     "Punch Block Stage 5"
+                     "Toss legs aside"]
+    "Bladed stance" "Hook Sweep"}
 
    "Punch Block Stage 5"
    {::transitions ["Punch Block Stage 4"
@@ -216,6 +217,9 @@
    "Double Ankle Sweep"
    {"Knee Thrust" "Low Mount"
     "Kick"        "Opponent on Ground"}
+
+   "Hook Sweep"
+   {::transitions ["Opponent on Ground"]}
 
    ;; Side Mount
 
@@ -346,6 +350,9 @@
    "Half Guard + headlock"
    {"Surprise Roll" "Half Guard"}
 
+   "Open Guard"
+   {::transitions ["Knee Split"]}
+
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}
 
@@ -365,7 +372,7 @@
    {"Counter" "Knee Split"}
 
    "Knee Split"
-   {}
+   {"Knee Split Pass (Back Side)" "Cross-Chest"}
 
    "High-Low Guard"
    {::transitions ["Guard" "Triangle Setup"]}
