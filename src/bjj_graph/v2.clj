@@ -339,6 +339,9 @@
    "Guard"
    {"Guard Get-Up" "Opponent on Ground"}
 
+   "Arm-In Guillotine (Guard)"
+   {::submission? true}
+
    "Triangle Choke"
    {::transitions ["Triangle Choke + slam prevention"]}
 
@@ -369,8 +372,12 @@
    {::transitions ["Knee on Belly"]}
 
    "Standing"
-   {::transitions      ["Over-Under Clinch"]
-    "Pisão Front Kick" "Clinch"}
+   {::transitions                   ["Over-Under Clinch"]
+    "Pisão Front Kick"              "Clinch"
+    "Tackle attempt, arm available" "Arm-In Guillotine (Standing)"}
+
+   "Arm-In Guillotine (Standing)"
+   {"Pull Guard" "Arm-In Guillotine (Guard)"}
 
    "Over-Under Clinch"
    {::transitions ["Pummel"]
