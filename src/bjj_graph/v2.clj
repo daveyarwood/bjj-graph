@@ -367,6 +367,9 @@
    "Knee Split"
    {}
 
+   "High-Low Guard"
+   {::transitions ["Guard" "Triangle Setup"]}
+
    "Side Mount"
    {::transitions                 ["Knee on Belly" "Seated Headlock"]
     ;; Bonus slice from Lesson 18: Heodlock Escape 1
@@ -384,7 +387,8 @@
    {::transitions ["Side Mount" "Opponent on Ground"]}
 
    "Opponent on Ground"
-   {::transitions ["Knee on Belly"]}
+   {::transitions        ["Knee on Belly"]
+    "Side Mount attempt" "High-Low Guard"}
 
    "Standing"
    {::transitions                   ["Over-Under Clinch"]
