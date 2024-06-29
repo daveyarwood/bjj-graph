@@ -174,14 +174,15 @@
 
    "Punch Block Stage 4"
    {::transitions ["Guard"
-                   "Punch Block Stage 5"]}
+                   "Punch Block Stage 5"
+                   "Toss legs aside"]}
 
    "Punch Block Stage 5"
    {::transitions ["Punch Block Stage 4"
-                   "Toss leg aside"]}
+                   "Toss legs aside"]}
 
-   "Toss leg aside"
-   {::transitions ["Side Mount"]
+   "Toss legs aside"
+   {::transitions ["Opponent on Ground"]
     "Rollover"    "Punch Block Stage 4"}
 
    "Straight Armlock (Guard)"
@@ -214,8 +215,10 @@
    ;; Side Mount
 
    "Side Mount"
-   {::transitions ["Cross-Chest" "Modified Side Mount"]
-    "Knee Drive"  "Mount + headlock"}
+   {::transitions                      ["Cross-Chest" "Modified Side Mount"]
+    "Knee Drive"                       "Mount + headlock"
+    "Shrimp Escape (Shrimp and Shoot)" "Three-Quarter Guard"
+    "Shrimp Escape (Rider)"            "Three-Quarter Guard"}
 
    "Side Mount + guillotine"
    {"Forearm choke" "Side Mount"}
@@ -249,7 +252,8 @@
    ;; Standing
 
    "Opponent on Ground"
-   {::transitions ["Seated Headlock" "Side Mount"]}
+   {::transitions                     ["Seated Headlock" "Side Mount"]
+    "Shrimp Escape (Block and Shoot)" "Three-Quarter Guard"}
 
    "Standing"
    {::transitions           ["Double Leg Takedown"]
@@ -357,7 +361,9 @@
    "Side Mount"
    {::transitions                 ["Knee on Belly" "Seated Headlock"]
     ;; Bonus slice from Lesson 18: Heodlock Escape 1
-    "Headlock attempt, back take" "Back Mount (Weak Side)"}
+    "Headlock attempt, back take" "Back Mount (Weak Side)"
+    ;; Bonus slice from Lesson 24: Shrimp Escape
+    "Half Guard Recovery"         "Half Guard"}
 
    "Seated Headlock"
    {::transitions ["Side Mount"]}
