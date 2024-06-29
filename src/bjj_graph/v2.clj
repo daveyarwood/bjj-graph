@@ -284,7 +284,8 @@
    {::transitions ["Side Mount"]}
 
    "Standing Headlock"
-   {::transitions ["Seated Headlock"]}
+   {::transitions               ["Seated Headlock"]
+    "Standing Headlock Defense" "Modified Mount + headlock"}
 
    "Guillotine Choke (Standing)"
    {::submission?              true
@@ -389,6 +390,9 @@
    {::transitions                   ["Over-Under Clinch"]
     "Pisão Front Kick"              "Clinch"
     "Tackle attempt, arm available" "Arm-In Guillotine (Standing)"}
+
+   "Standing Headlock"
+   {"Standing Headlock Defense (Smart Base)" "Modified Mount + headlock"}
 
    "Arm-In Guillotine (Standing)"
    {"Pull Guard" "Arm-In Guillotine (Guard)"}
