@@ -426,7 +426,27 @@
    {::transitions ["Open Guard"]}
 
    "Double Leg Takedown"
-   {"They don't fall" "Clinch"}})
+   {"They don't fall" "Clinch"}
+
+   ;; Does this position have a standard name?
+   ;; Bonus slice from Lesson 29: Rear Takedown
+   "Standing Behind Opponent"
+   {::transitions      ["Rear Clinch" "Rear Naked Choke (Standing)"]
+    "They turn around" "Standing"
+    "Knee Buckle"      "Pullback"}
+
+   ;; Does this position have a standard name?
+   ;; Bonus slice from Lesson 29: Rear Takedown
+   "Pullback"
+   {::transitions ["Knee on Belly"
+                   "Sitting Behind Opponent"
+                   "Rear Naked Choke (Standing)"]}
+
+   "Sitting Behind Opponent"
+   {::transitions ["Back Mount Setup" "Rear Naked Choke"]}
+
+   "Rear Naked Choke (Standing)"
+   {::submission? true}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
