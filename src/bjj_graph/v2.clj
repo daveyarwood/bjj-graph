@@ -451,7 +451,10 @@
    {::transitions ["Back Mount Setup" "Rear Naked Choke"]}
 
    "Rear Naked Choke (Standing)"
-   {::submission? true}})
+   {::submission? true}
+
+   "Guillotine Choke (Standing)"
+   {"Guillotine Choke Defense (Outside Trip)" "Side Mount + guillotine"}})
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
