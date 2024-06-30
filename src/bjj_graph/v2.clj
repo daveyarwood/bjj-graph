@@ -227,10 +227,15 @@
    ;; Side Mount
 
    "Side Mount"
-   {::transitions                      ["Cross-Chest" "Modified Side Mount"]
-    "Knee Drive"                       "Mount + headlock"
+   {::transitions                      ["Cross-Chest"
+                                        "Modified Side Mount"
+                                        "Knee Drive (Side Mount)"]
     "Shrimp Escape (Shrimp and Shoot)" "Three-Quarter Guard"
     "Shrimp Escape (Rider)"            "Three-Quarter Guard"}
+
+   "Knee Drive (Side Mount)"
+   {::transitions  ["Mount + headlock"]
+    "Elbow Escape" "Half Guard"}
 
    "Side Mount + guillotine"
    {"Forearm choke" "Side Mount"}
@@ -239,7 +244,14 @@
    {::transitions ["Side Mount"]}
 
    "Modified Side Mount"
-   {::transitions ["Side Mount"]}
+   {::transitions ["Side Mount" "Reverse Cross-Chest"]}
+
+   "Reverse Cross-Chest"
+   {::transitions ["Modified Side Mount" "High Step (Reverse Cross-Chest)"]}
+
+   "High Step (Reverse Cross-Chest)"
+   {::transitions  ["Low Mount"]
+    "Elbow Escape" "Half Guard"}
 
    "Seated Headlock"
    {"Frame Escape"       "Headlock Escape 1"
@@ -349,7 +361,8 @@
    {::submission? true}
 
    "Half Guard"
-   {::transitions ["Half Guard + headlock"]}
+   {::transitions ["Half Guard + headlock"]
+    "Tripod Pass" "Side Mount"}
 
    "Half Guard + headlock"
    {"Surprise Roll" "Half Guard"}
@@ -458,7 +471,7 @@
 
 (def blue-belt-stripe-1
   {"Trap and Roll"
-   {"Super Hooks" "Mount"}})
+   {"Super Hooks" "Low Mount"}})
 
 (def all-collections
   (coll/merge-with+
