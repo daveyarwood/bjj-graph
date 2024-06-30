@@ -159,7 +159,8 @@
     "Headlock + leg posted"         "Elevator Sweep"
     "Stand up + feet close"         "Double Ankle Sweep"
     "Hands posted on ground"        "Kimura Armlock (Guard)"
-    "Arm over head"                 "Kimura Armlock (Guard)"}
+    "Arm over head"                 "Kimura Armlock (Guard)"
+    "Forearm on chest"              "Take the Back (Guard)"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Triangle Setup"
@@ -210,6 +211,9 @@
 
    "Kimura Armlock (Guard)"
    {::submission? true}
+
+   "Take the Back (Guard)"
+   {::transitions ["Back Mount Setup"]}
 
    "Elevator Sweep"
    {::transitions ["Mount"]}
@@ -355,7 +359,8 @@
    {::transitions ["Knee Split"]}
 
    "Guard"
-   {"Guard Get-Up" "Opponent on Ground"}
+   {"Guard Get-Up" "Opponent on Ground"
+    "Headlock"     "Take the Back (Guard)"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Kimura Armlock (Guard)"]}
