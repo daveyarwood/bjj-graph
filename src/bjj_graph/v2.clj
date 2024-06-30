@@ -425,7 +425,7 @@
    "Inside Trip"
    {::transitions ["Open Guard"]}
 
-   "Rear Takedown"
+   "Double Leg Takedown"
    {"They don't fall" "Clinch"}})
 
 (def blue-belt-stripe-1
