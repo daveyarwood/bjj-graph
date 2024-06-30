@@ -52,8 +52,7 @@
    "Low Mount"
    {::transitions             ["High Mount"
                                "Mount + bottom person turns to side"
-                               "Mount + hooks"
-                               "Elbow Escape"]
+                               "Mount + hooks"]
     "Headlock"                "Mount + headlock"
     "Bottom person headlocks" "Modified Mount + headlock"
     "Bench press"             "Mount + bench press"
