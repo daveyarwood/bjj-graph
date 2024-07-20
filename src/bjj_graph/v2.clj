@@ -280,7 +280,7 @@
     "Shrimp Escape (Block and Shoot)" "Three-Quarter Guard"}
 
    "Standing"
-   {::transitions            ["Double Leg Takedown"]
+   {::transitions            ["Double Leg Takedown" "Standing Headlock"]
     "Aggressive Opponent"    "Clinch"
     "Conservative Opponent"  "Clinch"
     "Tackle attempt"         "Guillotine Choke (Standing)"
