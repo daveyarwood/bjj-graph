@@ -284,7 +284,8 @@
     "Aggressive Opponent"    "Clinch"
     "Conservative Opponent"  "Clinch"
     "Tackle attempt"         "Guillotine Choke (Standing)"
-    "Haymaker Punch Defense" "Rear Clinch"}
+    "Haymaker Punch Defense" "Rear Clinch"
+    "Hand on chest"          "Standing Armlock"}
 
    "Clinch"
    {::transitions              ["Rear Clinch" "Standing Headlock"]
@@ -312,6 +313,9 @@
     "Look up, circle around"   "Rear Clinch"
     "Guillotine Choke Defense" "Side Mount + guillotine"
     "Pull Guard"               "Guillotine Choke (Guard)"}
+
+   "Standing Armlock"
+   {::submission? true}
 
    "Rear Clinch"
    {::transitions   ["Clinch"]
@@ -418,7 +422,8 @@
    "Standing"
    {::transitions                   ["Over-Under Clinch"]
     "Pisão Front Kick"              "Clinch"
-    "Tackle attempt, arm available" "Arm-In Guillotine (Standing)"}
+    "Tackle attempt, arm available" "Arm-In Guillotine (Standing)"
+    "Arm Drag"                      "Rear Clinch"}
 
    "Standing Headlock"
    {"Standing Headlock Defense (Smart Base)" "Modified Mount + headlock"}
