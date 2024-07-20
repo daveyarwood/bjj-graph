@@ -80,9 +80,14 @@
    "High Mount"
    {::transitions   ["Low Mount"
                      "Mount + 2-on-1 arm pin"
-                     "Mount + bottom person turns to side"]
+                     "Mount + bottom person turns to side"
+                     "Twisting Arm Control"]
     "Hand on chest" "Trap and Roll"
     "Punch block"   "Mount + back wrap"}
+
+   "Twisting Arm Control"
+   {::transitions    ["Straight Armlock (Seated)"]
+    "They face down" "Back Mount Setup"}
 
    "Mount + 2-on-1 arm pin"
    {::transitions ["Americana Armlock"]}
@@ -105,8 +110,8 @@
    {"Release" "Modified Mount"}
 
    "Modified Mount"
-   {::transitions              ["Low Mount" "Straight Armlock (Seated)"]
-    "Bottom person faces down" "Back Mount Setup"}
+   {::transitions    ["Low Mount" "Straight Armlock (Seated)"]
+    "They face down" "Back Mount Setup"}
 
    ;; Back Mount
 
@@ -344,6 +349,9 @@
    "Mount + guillotine"
    {"Dismount" "Side Mount + guillotine"}
 
+   "Twisting Arm Control"
+   {"TAC Transfer" "Back Mount (Weak Side)"}
+
    "Modified Mount"
    ;; From Lesson 4: Take the Back (Mount)
    {"Rider Transition" "Back Mount (Face Down)"}
@@ -356,7 +364,11 @@
     "Frame Escape" "Open Guard"}
 
    "Back Mount (Weak Side)"
-   {"Crossover" "Back Mount (Strong Side)"}
+   {::transitions ["Back Mount (Triple Threat)"]
+    "Crossover"   "Back Mount (Strong Side)"}
+
+   "Back Mount (Triple Threat)"
+   {::transitions ["Straight Armlock (Seated)"]}
 
    "Back Mount (Face Down)"
    {"Lift head" "Back Mount (Face Down) - One-armed choke"}
