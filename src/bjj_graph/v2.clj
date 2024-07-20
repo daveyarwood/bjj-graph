@@ -149,13 +149,18 @@
    {::transitions ["Guard"]}
 
    "Open Guard"
-   {"Cross feet"      "Guard"
+   {::transitions     ["Open Guard + double underhooks"]
+    "Cross feet"      "Guard"
     "Open Guard Pass" "Mount"}
+
+   "Open Guard + double underhooks"
+   {"Double Underhook Pass" "Modified Side Mount"}
 
    "Guard"
    {::transitions                   ["Punch Block Stage 1.5"
                                      "Punch Block Stage 3"
                                      "Punch Block Stage 4"]
+    "Throw strikes"                  "Open Guard"
     "Hand on chest (low)"            "Straight Armlock (Guard)"
     "Hand on chest (high)"           "Straight Armlock (Guard)"
     "Upper body crush"              "Giant Killer"
@@ -387,8 +392,12 @@
    {::transitions ["Knee Split"]}
 
    "Guard"
-   {"Guard Get-Up" "Opponent on Ground"
-    "Headlock"     "Take the Back (Guard)"}
+   {"Guard Get-Up"      "Opponent on Ground"
+    "Headlock"          "Take the Back (Guard)"
+    ;; I don't know if Rener & Ryron ever refer to this move by name, but I've
+    ;; seen it referred to elsewhere as the "log splitter pass" or "knee wedge
+    ;; pass".
+    "Log Splitter Pass" "Open Guard"}
 
    "Punch Block Stage 1.5"
    {::transitions ["Kimura Armlock (Guard)"]}
