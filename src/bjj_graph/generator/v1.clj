@@ -41,11 +41,11 @@
                   ;; If there is at least one more step after this one and there
                   ;; are non-submission options available, then avoid
                   ;; submissions, so as not to end the sequence prematurely.
-                  options     (if (and length
-                                       (pos? length)
-                                       (seq non-submission-options))
-                                non-submission-options
-                                all-options)]
+                  options                 (if (and length
+                                                   (pos? length)
+                                                   (seq non-submission-options))
+                                            non-submission-options
+                                            all-options)]
               (rand-nth options))]
         (cons technique
               (random-sequence* next-position (when length (dec length))))))))
