@@ -27,8 +27,7 @@
   (viz/viz-graph {})
   (viz/viz-graph {:version 2, :no-exit? true})
 
-  (let [filename (format "/keybase/public/daveyarwood/misc/%s-bjj-graph.svg"
-                         (LocalDate/now))]
+  (let [filename (format "/tmp/%s-bjj-graph.svg" (LocalDate/now))]
     (viz/viz-graph
       {:save
        {:filename filename
