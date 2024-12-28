@@ -20,6 +20,18 @@ testing "viz-graph - no args"
 
 ################################################################################
 
+testing "viz-graph v1"
+
+"$(dirname "$0")/viz-graph" "{:version 1}"
+
+################################################################################
+
+testing "viz-graph v2"
+
+"$(dirname "$0")/viz-graph" "{:version 2}"
+
+################################################################################
+
 testing "viz-graph v1 - save to file, open in Firefox"
 
 filename="/tmp/bjj-graph-$(timestamp).svg"
@@ -48,9 +60,27 @@ testing "random-sequence - no args"
 
 ################################################################################
 
+testing "random-sequence v1"
+
+"$(dirname "$0")/random-sequence" "{:version 1}"
+
+################################################################################
+
+testing "random-sequence v2"
+
+"$(dirname "$0")/random-sequence" "{:version 2}"
+
+################################################################################
+
 testing "random-subgraph - no args"
 
 "$(dirname "$0")/random-subgraph"
+
+################################################################################
+
+testing "random-subgraph v1"
+
+"$(dirname "$0")/random-subgraph" "{:version 1}"
 
 ################################################################################
 
@@ -59,7 +89,8 @@ testing "random-subgraph v1 - save to file, open in Firefox"
 filename="/tmp/random-subgraph-$(timestamp).png"
 
 "$(dirname "$0")/random-subgraph" \
-  "{:start-position \"Mount\",
+  "{:version 1,
+    :start-position \"Mount\",
     :viz-graph-opts {:save {:format :png, :filename \"$filename\"}}}"
 
 firefox "$filename"

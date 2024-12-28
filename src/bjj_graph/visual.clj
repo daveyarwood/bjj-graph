@@ -6,7 +6,7 @@
 (defn viz-graph
   "A CLI entrypoint to produce a visual graph of positions and techniques."
   [{:keys [version no-exit?]
-    :or {version 1}
+    :or {version 2}
     :as opts}]
   (cond-> (uber/viz-graph
             (versions/graph-version version)

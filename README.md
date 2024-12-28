@@ -84,16 +84,10 @@ from the current one) until a submission occurs:
 
 ```
 $ bin/random-sequence
-Over-Under Clinch
-Pummel
-Body Fold Takedown
 Twisting Arm Control
-Take the Back
-Frame Escape
-Double Underhook Guard Pass
-Reverse Cross-Chest
-Mount Transition (High Step)
-Americana Armlock (Standard)
+TAC Transfer => Back Mount (Weak Side)
+Back Mount (Triple Threat)
+Straight Armlock (Seated)
 ```
 
 ### `bin/random-subgraph`
