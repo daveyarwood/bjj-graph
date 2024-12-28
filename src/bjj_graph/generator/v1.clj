@@ -62,8 +62,8 @@
 
    When no `length` is provided, the sequence is of arbitrary length, ending
    whenever \"Submitted\" is reached."
-  [position* & [length]]
-  (let [position (or position* (random-position))]
+  [{:keys [start-position length]}]
+  (let [position (or start-position (random-position))]
     (cons position (random-sequence* position length))))
 
 (defn random-subgraph
@@ -77,7 +77,7 @@
         (or position* (random-position))
 
         generated-sequence
-        (random-sequence position length)
+        (random-sequence {:start-position position, :length length})
 
         {:keys [subgraph]}
         (reduce (fn [{:keys [current-position subgraph]}
@@ -115,7 +115,7 @@
     (v1/graph subgraph)))
 
 (comment
-  (random-sequence "Standing Apart")
-  (random-sequence "Mount")
-  (random-sequence (rand-nth (uber/nodes v1/GRAPH)))
+  (random-sequence {:start-position "Standing Apart"})
+  (random-sequence {:start-position "Mount"})
+  (random-sequence {:start-position (rand-nth (uber/nodes v1/GRAPH))})
   *e)

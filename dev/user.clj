@@ -27,6 +27,8 @@
   (viz/viz-graph {})
   (viz/viz-graph {:version 2, :no-exit? true})
 
+  (gen/random-sequence {:version 1})
+
   (let [filename (format "/tmp/%s-bjj-graph.svg" (LocalDate/now))]
     (viz/viz-graph
       {:save
