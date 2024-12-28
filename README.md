@@ -40,6 +40,10 @@ that when you are either holding a position or executing a technique, those are
 both states that can be explored, with various outcomes depending on what your
 opponent is doing.
 
+Another benefit of this approach is that the "indicators" that a particular
+technique is applicable in a particular position/situation can be represented by
+labeling the edges between nodes.
+
 ## Graph visualization
 
 This project uses the ubergraph library to construct the graph and graphviz
