@@ -120,6 +120,6 @@ firefox "$filename"
 
 ## License
 
-Copyright © 2021-2024 Dave Yarwood
+Copyright © 2021-2025 Dave Yarwood
 
 Distributed under the Eclipse Public License version 2.0.
